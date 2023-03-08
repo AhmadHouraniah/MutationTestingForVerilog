@@ -57,24 +57,27 @@ class MutationOperator:
             iterationsAndResults.append([iteration, result])
             if(result):
                 for i in MutatedFileNames:
-                    shutil.move(i, 'Pass/'+i)
+                    shutil.move('TestingCode/'+i, 'Pass/'+i)
             else:
                 for i in MutatedFileNames:
-                    shutil.move(i, 'Fail/'+i)
+                    shutil.move('TestingCode/'+i, 'Fail/'+i)
         return iterationsAndResults
         
     def applyMutation(self, x):
+        #should create MutatedFileNames 
+        #current code has a bug, its sometimes marking unchanged code as mutated, thus moving its folder
+        MutatedFileNames = ''
         self.iterations +=1
         global globalIterations
         globalIterations +=1
-        return self.iterations    
+        return self.iterations, MutatedFileNames
     def simulate(self, MutatedFileNames):
         
         
         
         try:
-            output = check_output(IverilogFilePath+' -o simulationResult ' + ' '.join(MutatedFileNames) +' '+ self.TB, stderr=STDOUT, timeout=10)
-            output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=10).decode("utf-8")
+            output = check_output(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=100)
+            output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=100).decode("utf-8")
         except:
             output = ' fail '
             print('simulationFailed, syntax error')

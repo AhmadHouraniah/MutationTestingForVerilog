@@ -9,7 +9,7 @@ from changeBitWidth import changeBitWidth
 class mutationController:
     def __init__(self, TB):
         self.TB = TB
-        all_files = os.listdir()
+        all_files = os.listdir('TestingCode/')
         self.files=[]
         for i in all_files:
             if(('.v' in i) and ('.vcd' not in i) and (i != TB)):
