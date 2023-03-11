@@ -14,6 +14,7 @@ class mutationController:
         for i in all_files:
             if(('.v' in i) and ('.vcd' not in i) and (i != TB)):
                 self.files.append(i)
+                #add all verilog files except tb
             
            
         if(self.files==''): 

@@ -53,8 +53,15 @@ class MutationOperator:
         iterationsAndResults = []
         for i in range (self.getNumOfMutationsThatCanBeApplied()):
             iteration, MutatedFileNames = self.applyMutation(i)
+            #we need to decide how we deal with this, 
+            #since projects can have multiple verilog files
+            #should we store each mutation in a folder
+            #or should we keep them in the same path with 
             result =  self.simulate(MutatedFileNames)
             iterationsAndResults.append([iteration, result])
+            #if mutation in name move, else copy            
+            #if not os.path.exists(newpath): use this to create folders for each mutation
+                #os.makedirs(newpath)
             if(result):
                 for i in MutatedFileNames:
                     shutil.move('TestingCode/'+i, 'Pass/'+i)
@@ -80,22 +87,7 @@ class MutationOperator:
             output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=100).decode("utf-8")
         except:
             output = ' fail '
-            print('simulationFailed, syntax error')
-            
-        #return True
-        #stream = os.popen(IverilogFilePath+' -o simulationResult ' + ' '.join(MutatedFileNames) +' '+ self.TB, TimeoutError)
-        #output = stream.read()
-        
-        #command = Command(IverilogFilePath+' -o simulationResult ' + ' '.join(MutatedFileNames) +' '+ self.TB)
-        #print(command)
-        #command.run(timeout=10)
-        #command.run(timeout=1)
-        
-        #os.system(IverilogFilePath+' -o simulationResult ' + ' '.join(MutatedFileNames) +' '+ self.TB)
-        #os.system(vvpPath + ' simulationResult')
-        #
-        #stream = os.popen(vvpPath + ' simulationResult')
-        #output ='pass' #stream.read()
+            print('simulationFailed, syntax error, for debugging')
         
         if('pass' in output   ):
             return True

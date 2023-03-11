@@ -34,10 +34,10 @@ class changeBitWidth(MutationOperator):
                             print(text[j])
                     cnt+=1
             #Theres a bug here!!!!
-            MutatedFileNames = list(map(lambda x: x.replace(i, i[:-2]+'_mutation_'+str(self.iterations)+'.v'), self.files))
+            MutatedFileNames = list(map(lambda x: x.replace(i, i[:-2]+'_mutation_'+str(self.globalIterations)+'.v'), self.files))
 
             #MutatedFileNames.replace(i,i[:-2]+'_mutation_'+str(self.iterations)+'.v')                         
-            with open('TestingCode/'+i[:-2]+'_mutation_'+str(self.iterations)+'.v', 'w') as file:
+            with open('TestingCode/'+i[:-2]+'_mutation_'+str(self.globalIterations)+'.v', 'w') as file:
                 for line in text:
                     file.write(str(line))
             
