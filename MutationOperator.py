@@ -24,8 +24,7 @@ class MutationOperator:
         return self.mutationType
     
     def getNumOfMutationsThatCanBeApplied(self):
-        return None
-        
+        return self.numOfMutationsThatCanBeApplied
     def applyMutationAndSimulate(self):
         iterationsAndResults = []
         for i in range (self.getNumOfMutationsThatCanBeApplied()):

@@ -13,11 +13,10 @@ class changeBitWidth(MutationOperator):
         for i in self.files:
             text = open('TestingCode/'+i).readlines()
             for j in text:
-                if(('[' in j) and (']' in j) and (':' in j)):
+                if(('reg' in j) and ('[' in j) and (']' in j) and (':' in j)):
                    self.numOfMutationsThatCanBeApplied+=1
         
-    def getNumOfMutationsThatCanBeApplied(self):
-        return self.numOfMutationsThatCanBeApplied
+
     
     def applyMutation(self, x):
         cnt = 0
