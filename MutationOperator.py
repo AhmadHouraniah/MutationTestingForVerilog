@@ -10,29 +10,6 @@ from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 # import subprocess, threading
 from subprocess import STDOUT, check_output
 
-# class Command(object):
-#     def __init__(self, cmd):
-#         self.cmd = cmd
-#         self.process = None
-
-#     def run(self, timeout):
-#         def target():
-            
-#             self.process = subprocess.Popen(self.cmd, shell=True, stdout=subprocess.PIPE)
-#             self.process.wait()
-#             response = self.process.communicate()[0]
-#             print(response)
-
-#         thread = threading.Thread(target=target)
-#         thread.start()
-
-#         thread.join()
-#         if thread.is_alive():
-#             print('Terminating process')
-#             self.process.terminate()
-#             thread.join()
-#         print(self.process.returncode)
-
 
       
 class MutationOperator:
@@ -64,10 +41,16 @@ class MutationOperator:
                 #os.makedirs(newpath)
             if(result):
                 for i in MutatedFileNames:
-                    shutil.move('TestingCode/'+i, 'Pass/'+i)
+                    if('mutation' in i):
+                        shutil.move('TestingCode/'+i, 'Pass/'+i)
+                    else:
+                        shutil.copy('TestingCode/'+i, 'Pass/'+i)
             else:
                 for i in MutatedFileNames:
-                    shutil.move('TestingCode/'+i, 'Fail/'+i)
+                    if('mutation' in i):
+                        shutil.move('TestingCode/'+i, 'Fail/'+i)
+                    else:
+                        shutil.copy('TestingCode/'+i, 'Fail/'+i)
         return iterationsAndResults
         
     def applyMutation(self, x):
@@ -76,6 +59,8 @@ class MutationOperator:
         MutatedFileNames = ''
         self.iterations +=1
         global globalIterations
+        global verilogFilePath
+        global vvpPath
         globalIterations +=1
         return self.iterations, MutatedFileNames
     def simulate(self, MutatedFileNames):
@@ -83,6 +68,7 @@ class MutationOperator:
         
         
         try:
+            print(verilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB)
             output = check_output(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=100)
             output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=100).decode("utf-8")
         except:
