@@ -59,18 +59,26 @@ class MutationOperator:
         MutatedFileNames = ''
         self.iterations +=1
         global globalIterations
-        global verilogFilePath
+        global IverilogFilePath
         global vvpPath
         globalIterations +=1
         return self.iterations, MutatedFileNames
     def simulate(self, MutatedFileNames):
         
-        
-        
+        global IverilogFilePath
+        global vvpPath
+        #print(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'+ ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB)
+        #output = check_output(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=100, shell=True)
+        #print(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'+MutatedFileNames +' TestingCode/'+ self.TB)
+
         try:
-            print(verilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB)
-            output = check_output(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=100)
-            output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=100).decode("utf-8")
+            #print(IverilogFilePath+' -o simulationResult ' + ' TestingCode/'+MutatedFileNames +' TestingCode/'+ self.TB)
+                  #' TestingCode/'.join(MutatedFileNames) +' TestingCode/'+ self.TB)
+            tmp_list = ''
+            for i in MutatedFileNames:
+                tmp_list += 'TestingCode/' +  i
+            output = check_output(IverilogFilePath+' -o simulationResult ' + tmp_list +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=10, shell=True)
+            output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=10, shell=True).decode("utf-8")
         except:
             output = ' fail '
             print('simulationFailed, syntax error, for debugging')
