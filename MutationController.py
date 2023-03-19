@@ -6,7 +6,7 @@ from changeBitWidth import changeBitWidth
 #from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 
 
-class mutationController:
+class MutationController:
     def __init__(self, TB):
         self.TB = TB
         all_files = os.listdir('TestingCode/')
