@@ -5,6 +5,8 @@ import shutil
 
 import codecs
 
+from numpy.core.defchararray import strip
+
 from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 
 # import subprocess, threading
@@ -19,6 +21,35 @@ class MutationOperator:
         self.mutationType = mutationType
         self.files = files
         self.TB = TB
+
+    def repaceParams(self): # replaces parameters with constants so that they can be parsed
+        print(self.files)
+        for i in self.files:
+            text = open('TestingCode/' + i).readlines()
+            params = []
+            vals = []
+            ii = 0
+            for j in text:
+                if ('PARAMETER' in j or 'parameter' in j or 'LOCALPARAM' in j or 'localparam' in j):
+                    if('PARAMETER' in j):
+                        params[ii] = strip(j[j.find('PARAMETER')+10:j.find('=')-1])
+                    elif('parameter' in j):
+                        params.append(strip(j[j.find('PARAMETER')+10:j.find('=')-1]))
+                    elif ('LOCALPARAM' in j):
+                        params[ii] = strip(j[j.find('LOCALPARAM') +10:j.find('=') - 1])
+                    elif ('localparam' in j):
+                        params[ii] = strip(j[j.find('localparam') +10:j.find('=') - 1])
+                    vals.append(int(strip(j[j.find('=')+1:j.find(';')])))
+                    ii += 1
+
+            for j in range(len(text)):
+                for k in range(len(params)):
+                    if str(params[k]) in text[j]:
+                        if (not('PARAMETER' in text[j] or 'parameter' in text[j] or 'LOCALPARAM' in text[j] or 'localparam' in text[j])):
+                            text[j]=text[j].replace(str(params[k]), str(vals[k]))
+            with open('TestingCode/' + i, 'w') as file:
+                for line in text:
+                    file.write(str(line))
 
     def getMutationType(self):
         return self.mutationType
@@ -68,8 +99,8 @@ class MutationOperator:
 
         global IverilogFilePath
         global vvpPath
-        #tmp_list = ''
-        #for i in MutatedFileNames:
+        # tmp_list = ''
+        # for i in MutatedFileNames:
         #    tmp_list += ' TestingCode/' + i
         # !'^+^+%%&%&//())==??é!'^+%&&//(())output = check_output(IverilogFilePath+' -o simulationResult ' + tmp_list +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=5, shell=True)
         # output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=5, shell=True).decode("utf-8")
@@ -78,12 +109,12 @@ class MutationOperator:
             for i in MutatedFileNames:
                 tmp_list += 'TestingCode/' + i
             check_output(IverilogFilePath + ' -o simulationResult ' + tmp_list + ' TestingCode/' + self.TB,
-                                  stderr=STDOUT, timeout=5, shell=True)
+                         stderr=STDOUT, timeout=5, shell=True)
             output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=5, shell=True).decode("utf-8")
         except:
             output = ' fail '
             print('simulationFailed, syntax error, for debugging')
-
+        print(output)
         if ('pass' in output):
             return True
         elif ('fail' in output):
