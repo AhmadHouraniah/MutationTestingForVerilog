@@ -15,7 +15,6 @@ class changeBitWidth(MutationOperator):
             for j in text:
                 if(('[' in j) and (']' in j) and (':' in j)):
                    self.numOfMutationsThatCanBeApplied+=1
-        print(self.numOfMutationsThatCanBeApplied)
 
     
     def applyMutation(self, x):

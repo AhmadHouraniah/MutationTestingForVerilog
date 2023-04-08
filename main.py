@@ -1,4 +1,3 @@
-import pandas as pd
 from MutationController import MutationController
 
 print("Welcome to the mutation testing tool for Verilog")
