@@ -42,7 +42,7 @@ class delayInputs(MutationOperator):
                         inputList.append(list(map(lambda x: {"name": x, "bitWidths": ""}, inputNames)))
             self.inputDict[fileName] = [item for sublist in inputList for item in sublist] ## flatten the list
             self.numOfMutationsThatCanBeApplied = len(self.inputDict[fileName]) ## length of total input count in a single file
-        print("Mutation Count: ", self.numOfMutationsThatCanBeApplied)
+        print("Mutation Count (delayInputs): ", self.numOfMutationsThatCanBeApplied)
 
     def applyMutation(self, x):
         global globalIterations
@@ -52,23 +52,21 @@ class delayInputs(MutationOperator):
 
                 ## delay wire is written directly after the declaration of input to do not create syntax error.
                 if((self.inputDict[fileName][x]["name"] in line) & ("input" in line)):
+                    print("Delayed Input (by #2): ", self.inputDict[fileName][x]["name"])
                     text[lineIndex] = line \
                     + "\nwire "+ str(self.inputDict[fileName][x]["bitWidths"]) \
                     + " #2 " + self.inputDict[fileName][x]["name"] \
                     +"Delayed = " + self.inputDict[fileName][x]["name"] + ";\n"
-                    print("Wire Line: ", text[lineIndex])
                 ## to change the input name in all file
                 ## the question is should we delay the clock ????????
                 if((self.inputDict[fileName][x]["name"] in line) &
                     (not "input" in line) & 
                     (not "module" in line)):
                     text[lineIndex] = line.replace(self.inputDict[fileName][x]["name"], self.inputDict[fileName][x]["name"] + "Delayed")
-                    # print("Changed Line: ", text[lineIndex])
             ## This will have only one fileName not multiple. When this function called
             ## this will generate a single mutation file.
             MutatedFileNames = list(map(lambda x: x.replace(fileName, fileName[:-2]+'_mutation_'+self.getMutationType()+str(globalIterations)+'.v'), self.files))
-
-            #MutatedFileNames.replace(i,i[:-2]+'_mutation_'+str(self.iterations)+'.v')                         
+                
             with open('TestingCode/'+fileName[:-2]+'_mutation_'+self.getMutationType()+str(globalIterations)+'.v', 'w') as file:
                 for line in text:
                     file.write(str(line))
