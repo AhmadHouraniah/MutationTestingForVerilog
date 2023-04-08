@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define BITWIDTH 6
+`define BITWIDTH 5
 `define DEPTH 4
 `define NUMREADS 500
 module FIFO_tb;

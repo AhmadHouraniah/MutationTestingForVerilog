@@ -4,6 +4,7 @@ import pandas as pd
 from changeBitWidth import changeBitWidth
 from forceConst import forceConst
 from delayInputs import delayInputs
+from delayOutputs import delayOutputs
 
 
 # from GlobalVars import globalIterations, IverilogFilePath, vvpPath
@@ -23,7 +24,8 @@ class MutationController:
             print('No verilog files detected, make sure they are in the same folder')
         self.mutationTypes = [
             changeBitWidth(self.TB, self.files),
-            delayInputs(self.TB, self.files)]#[changeBitWidth, forceConstant, unstableOutput, raceCondition, delayOut, operatorChange, randomFlips]
+            delayInputs(self.TB, self.files),
+            delayOutputs(self.TB, self.files)]#[changeBitWidth, forceConstant, unstableOutput, raceCondition, delayOut, operatorChange, randomFlips]
         self.cols1 = ['Mutation','iteration','result type']
         self.complete_df = pd.DataFrame(columns=self.cols1)
         self.summarized_df = pd.DataFrame(columns=['Mutation', 'iterations', 'percentage passed', 'percentage failed'])
