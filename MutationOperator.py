@@ -66,7 +66,7 @@ class MutationOperator:
             # should we store each mutation in a folder
             # or should we keep them in the same path with
             result = self.simulate(MutatedFileNames)
-            iterationsAndResults.append([iteration, result])
+            iterationsAndResults.append([self.getMutationType(),iteration, result])
             # if mutation in name move, else copy
             # if not os.path.exists(newpath): use this to create folders for each mutation
             # os.makedirs(newpath)
