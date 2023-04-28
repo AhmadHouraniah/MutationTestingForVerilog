@@ -1,4 +1,3 @@
-import pandas as pd
 from MutationController import MutationController
 
 print("Welcome to the mutation testing tool for Verilog")
@@ -8,3 +7,5 @@ print("Store all the required files in the same folder")
 x=MutationController(TestbenchName)
 x.applyMutations()
 print(x.getComplete_df())
+print(x.getSummarized_df())
+x.getPlots()

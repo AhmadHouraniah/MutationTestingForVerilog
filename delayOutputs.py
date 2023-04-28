@@ -17,7 +17,7 @@ class delayOutputs(MutationOperator):
     # }
     
     def __init__(self, TB, files):
-        print(files)
+        #print(files)
         super().__init__('feedback for delayOutputs', 'delayOutputs',TB, files)
         self.numOfMutationsThatCanBeApplied = 0
         self.outputDict = {fileName: None for fileName in self.files}
@@ -43,7 +43,7 @@ class delayOutputs(MutationOperator):
                         
             self.outputDict[fileName] = {"names": outputNames, "lineIndexes" : lineIndexes}
             self.numOfMutationsThatCanBeApplied = len(self.outputDict[fileName]["lineIndexes"])
-        print("Mutation Count (delayOutputs): ", self.numOfMutationsThatCanBeApplied)
+        #print("Mutation Count (delayOutputs): ", self.numOfMutationsThatCanBeApplied)
 
     def applyMutation(self, x):
         global globalIterations
@@ -52,7 +52,7 @@ class delayOutputs(MutationOperator):
             line = text[self.outputDict[fileName]["lineIndexes"][x]]
             if(any([x in line for x in self.outputDict[fileName]["names"]])):
                 param = next((x for x in self.outputDict[fileName]["names"] if x in line), False)
-                print("Delayed assignment (by #2): ", line)
+                #print("Delayed assignment (by #2): ", line)
                 text[self.outputDict[fileName]["lineIndexes"][x]] = \
                     line.replace(param, "#2 "+ param)
             

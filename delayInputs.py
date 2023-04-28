@@ -9,16 +9,8 @@ import numpy as np
 
 class delayInputs(MutationOperator):
 
-    ## inputDict = {
-    #   fileName: [{
-    #       name: ....
-    #       bitWidth: ...
-    #       }, ....
-    #   ]
-    # }
-    
     def __init__(self, TB, files):
-        print(files)
+        #print(files)
         super().__init__('feedback for delayInputs', 'delayInputs',TB, files)
         self.numOfMutationsThatCanBeApplied = 0
         self.inputDict = {fileName: None for fileName in self.files}
@@ -42,7 +34,7 @@ class delayInputs(MutationOperator):
                         inputList.append(list(map(lambda x: {"name": x, "bitWidths": ""}, inputNames)))
             self.inputDict[fileName] = [item for sublist in inputList for item in sublist] ## flatten the list
             self.numOfMutationsThatCanBeApplied = len(self.inputDict[fileName]) ## length of total input count in a single file
-        print("Mutation Count (delayInputs): ", self.numOfMutationsThatCanBeApplied)
+        #print("Mutation Count (delayInputs): ", self.numOfMutationsThatCanBeApplied)
 
     def applyMutation(self, x):
         global globalIterations
@@ -52,7 +44,7 @@ class delayInputs(MutationOperator):
 
                 ## delay wire is written directly after the declaration of input to do not create syntax error.
                 if((self.inputDict[fileName][x]["name"] in line) & ("input" in line)):
-                    print("Delayed Input (by #2): ", self.inputDict[fileName][x]["name"])
+                    #print("Delayed Input (by #2): ", self.inputDict[fileName][x]["name"])
                     text[lineIndex] = line \
                     + "\nwire "+ str(self.inputDict[fileName][x]["bitWidths"]) \
                     + " #2 " + self.inputDict[fileName][x]["name"] \

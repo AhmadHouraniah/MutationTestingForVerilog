@@ -25,11 +25,13 @@ class MutationController:
         self.mutationTypes = [
             changeBitWidth(self.TB, self.files),
             delayInputs(self.TB, self.files),
-            delayOutputs(self.TB, self.files), replaceOperator(self.TB, self.files)]#[changeBitWidth, forceConstant, unstableOutput, raceCondition, delayOut, operatorChange, randomFlips]
+            delayOutputs(self.TB, self.files), replaceOperator(self.TB, self.files), forceConst(self.TB, self.files)]#[changeBitWidth, forceConstant, unstableOutput, raceCondition, delayOut, operatorChange, randomFlips]
+        
         self.cols1 = ['Mutation','iteration','resultType']
         self.complete_df = pd.DataFrame(columns=self.cols1)
-        self.summarized_df = pd.DataFrame(columns=['Mutation', 'iterations', 'percentage passed', 'percentage failed'])
-
+        self.summarized_df = pd.DataFrame(columns=['Mutation', 'iterations', 'percentage_passed'])
+        
+        
     def applyMutations(self):
         for i in self.mutationTypes:
             mutationOperator = i
@@ -46,7 +48,12 @@ class MutationController:
         return self.complete_df
 
     def getSummarized_df(self):
+        for i in self.mutationTypes:
+            self.summarized_df.loc[len(self.summarized_df)] = [i.getMutationType(), len(self.complete_df.query('Mutation == "'+i.getMutationType()+'"')),self.complete_df.query('Mutation == "'+i.getMutationType()+'"').query('resultType == True').resultType.count()/ len(self.complete_df.query('Mutation == "'+i.getMutationType()+'"'))]
+            
         return self.summarized_df
+    def getPlots(self):
+        return self.summarized_df.plot(x="Mutation",y='iterations', kind="bar", rot=5, fontsize=8), self.summarized_df.plot(x="Mutation",y='iterations', kind="bar", rot=5, fontsize=8)
 
 
 class main:

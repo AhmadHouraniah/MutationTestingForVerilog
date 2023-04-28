@@ -1,15 +1,10 @@
-import os
-import sys
-import pandas as pd
 import shutil
 
-import codecs
 
 from numpy.core.defchararray import strip
 
 from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 
-# import subprocess, threading
 from subprocess import STDOUT, check_output
 
 
@@ -61,15 +56,8 @@ class MutationOperator:
         iterationsAndResults = []
         for i in range(self.getNumOfMutationsThatCanBeApplied()):
             iteration, MutatedFileNames = self.applyMutation(i)
-            # we need to decide how we deal with this,
-            # since projects can have multiple verilog files
-            # should we store each mutation in a folder
-            # or should we keep them in the same path with
             result = self.simulate(MutatedFileNames)
             iterationsAndResults.append([self.getMutationType(),iteration, result])
-            # if mutation in name move, else copy
-            # if not os.path.exists(newpath): use this to create folders for each mutation
-            # os.makedirs(newpath)
             if (result):
                 for i in MutatedFileNames:
                     if ('mutation' in i):
@@ -99,11 +87,6 @@ class MutationOperator:
 
         global IverilogFilePath
         global vvpPath
-        # tmp_list = ''
-        # for i in MutatedFileNames:
-        #    tmp_list += ' TestingCode/' + i
-        # !'^+^+%%&%&//())==??é!'^+%&&//(())output = check_output(IverilogFilePath+' -o simulationResult ' + tmp_list +' TestingCode/'+ self.TB, stderr=STDOUT, timeout=5, shell=True)
-        # output = check_output(vvpPath + ' simulationResult', stderr=STDOUT, timeout=5, shell=True).decode("utf-8")
         try:
             tmp_list = ''
             for i in MutatedFileNames:
