@@ -34,7 +34,7 @@ class changeBitWidth(MutationOperator):
                             
                             text[j] = text[j].replace(search_text, replace_text)
                             print(text[j])
-                            text.insert(j-1, ' //error here')
+                            text.insert(j-1, ' //error here\n')
                             
                     cnt+=1
             #Theres a bug here!!!!

@@ -77,7 +77,7 @@ class replaceOperator(MutationOperator):
                             print(text[j] + '-> ' )
                             text[j] = text[j].replace(search_text, replace_text)
                             print(text[j])
-                            text.insert(j-1, ' //error insterted here')
+                            text.insert(j-1, ' //error insterted here \n')
                             
                     cnt+=1
 

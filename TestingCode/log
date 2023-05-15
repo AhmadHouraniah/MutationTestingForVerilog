@@ -1,0 +1,4532 @@
+inst_addr    0: 100110000000000000
+inst_addr    0: 100110000000000000
+inst_addr    0: 100110000000000000
+======== another instruction ========
+H00: xxxxxxxxxxxxxxxx
+H01: xxxxxxxxxxxxxxxx
+H10: xxxxxxxxxxxxxxxx
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    0: 100110000000000000
+PC: 0 : instruction = 100110000000000000
+inst_addr    0: 100110000000000000
+load16bit R0 im=0000000000
+inst_addr    0: 100110000000000000
+inst_addr    0: 100110000000000000
+inst_addr    1: 100110010000000001
+======== another instruction ========
+H00: 0000000000000101
+H01: xxxxxxxxxxxxxxxx
+H10: xxxxxxxxxxxxxxxx
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    1: 100110010000000001
+PC: 1 : instruction = 100110010000000001
+inst_addr    1: 100110010000000001
+load16bit R1 im=0000000001
+inst_addr    1: 100110010000000001
+inst_addr    1: 100110010000000001
+inst_addr    2: 100110100000000010
+======== another instruction ========
+H00: 0000000000000101
+H01: 0000000000001111
+H10: xxxxxxxxxxxxxxxx
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    2: 100110100000000010
+PC: 2 : instruction = 100110100000000010
+inst_addr    2: 100110100000000010
+load16bit R2 im=0000000010
+inst_addr    2: 100110100000000010
+inst_addr    2: 100110100000000010
+inst_addr    3: 000000000000000001
+======== another instruction ========
+H00: 0000000000000101
+H01: 0000000000001111
+H10: 0000000000000100
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    3: 000000000000000001
+PC: 3 : instruction = 000000000000000001
+inst_addr    3: 000000000000000001
+add16bit R0=0000000000000101 R1=0000000000001111
+inst_addr    3: 000000000000000001
+inst_addr    3: 000000000000000001
+inst_addr    4: 000000000000001000
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000000001111
+H10: 0000000000000100
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    4: 000000000000001000
+PC: 4 : instruction = 000000000000001000
+inst_addr    4: 000000000000001000
+add16bit R2=0000000000000100 R0=0000000000010100
+inst_addr    4: 000000000000001000
+inst_addr    4: 000000000000001000
+inst_addr    5: 101001000000000000
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000000001111
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    5: 101001000000000000
+PC: 5 : instruction = 101001000000000000
+inst_addr    5: 101001000000000000
+store16bit R0=0000000000010100 im=0000000000
+inst_addr    5: 101001000000000000
+write mem    0: 0000000000010100
+write mem    0: 0000000000010100
+inst_addr    5: 101001000000000000
+inst_addr    6: 101100010100100010
+write mem    0: 0000000000010100
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000000001111
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    6: 101100010100100010
+PC: 6 : instruction = 101100010100100010
+inst_addr    6: 101100010100100010
+set16bit R1 im=0100100010
+inst_addr    6: 101100010100100010
+inst_addr    6: 101100010100100010
+inst_addr    7: 000000000000000110
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100100010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    7: 000000000000000110
+PC: 7 : instruction = 000000000000000110
+inst_addr    7: 000000000000000110
+add16bit R1=0000000100100010 R2=0000000000011000
+inst_addr    7: 000000000000000110
+inst_addr    7: 000000000000000110
+inst_addr    8: 101001010000000011
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    8: 101001010000000011
+PC: 8 : instruction = 101001010000000011
+inst_addr    8: 101001010000000011
+store16bit R1=0000000100111010 im=0000000011
+write mem    3: 0000000100111010
+inst_addr    8: 101001010000000011
+inst_addr    8: 101001010000000011
+write mem    3: 0000000100111010
+write mem    3: 0000000100111010
+inst_addr    9: 101001100000000100
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr    9: 101001100000000100
+PC: 9 : instruction = 101001100000000100
+inst_addr    9: 101001100000000100
+store16bit R2=0000000000011000 im=0000000100
+inst_addr    9: 101001100000000100
+write mem    4: 0000000000011000
+write mem    4: 0000000000011000
+inst_addr    9: 101001100000000100
+inst_addr   10: 101001000000000101
+write mem    4: 0000000000011000
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   10: 101001000000000101
+PC: 10 : instruction = 101001000000000101
+inst_addr   10: 101001000000000101
+store16bit R0=0000000000010100 im=0000000101
+write mem    5: 0000000000010100
+inst_addr   10: 101001000000000101
+inst_addr   10: 101001000000000101
+write mem    5: 0000000000010100
+write mem    5: 0000000000010100
+inst_addr   11: 100111010000000010
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: xxxxxxxxxxxxxxxx
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   11: 100111010000000010
+PC: 11 : instruction = 100111010000000010
+inst_addr   11: 100111010000000010
+load8bit R1 im=0000000010
+inst_addr   11: 100111010000000010
+inst_addr   11: 100111010000000010
+inst_addr   12: 100111100000000011
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: 0000000000000100
+Oset10: xxxxxxxxxxxxxxxx
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   12: 100111100000000011
+PC: 12 : instruction = 100111100000000011
+inst_addr   12: 100111100000000011
+load8bit R2 im=0000000011
+inst_addr   12: 100111100000000011
+inst_addr   12: 100111100000000011
+inst_addr   13: 100111000000000100
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: xxxxxxxxxxxxxxxx
+Oset01: 0000000000000100
+Oset10: 0000000100111010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   13: 100111000000000100
+PC: 13 : instruction = 100111000000000100
+inst_addr   13: 100111000000000100
+load8bit R0 im=0000000100
+inst_addr   13: 100111000000000100
+inst_addr   13: 100111000000000100
+inst_addr   14: 101101010001011010
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000011000
+Oset01: 0000000000000100
+Oset10: 0000000100111010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   14: 101101010001011010
+PC: 14 : instruction = 101101010001011010
+inst_addr   14: 101101010001011010
+set8bit R1 im=0001011010
+inst_addr   14: 101101010001011010
+inst_addr   14: 101101010001011010
+inst_addr   15: 100101000000000010
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000011000
+Oset01: 0101101001011010
+Oset10: 0000000100111010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   15: 100101000000000010
+PC: 15 : instruction = 100101000000000010
+inst_addr   15: 100101000000000010
+setloop im=   2
+inst_addr   15: 100101000000000010
+inst_addr   15: 100101000000000010
+inst_addr   16: 000001000000000001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000011000
+Oset01: 0101101001011010
+Oset10: 0000000100111010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   16: 000001000000000001
+PC: 16 : instruction = 000001000000000001
+inst_addr   16: 000001000000000001
+add8bit R0=0000000000011000 R1=0101101001011010
+inst_addr   16: 000001000000000001
+inst_addr   16: 000001000000000001
+inst_addr   17: 000001000000001000
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0000000100111010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   17: 000001000000001000
+PC: 17 : instruction = 000001000000001000
+inst_addr   17: 000001000000001000
+add8bit R2=0000000100111010 R0=0101101001110010
+inst_addr   17: 000001000000001000
+inst_addr   17: 000001000000001000
+inst_addr   18: 000111000000001001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101110101100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   18: 000111000000001001
+PC: 18 : instruction = 000111000000001001
+inst_addr   18: 000111000000001001
+sub8bit R2=0101101110101100 R1=0101101001011010
+inst_addr   18: 000111000000001001
+inst_addr   18: 000111000000001001
+inst_addr   19: 001101000000001001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0000000101010010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   19: 001101000000001001
+PC: 19 : instruction = 001101000000001001
+inst_addr   19: 001101000000001001
+mul8bit R2=0000000101010010 R1=0101101001011010
+inst_addr   19: 001101000000001001
+inst_addr   19: 001101000000001001
+inst_addr   20: 101010010000000101
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   20: 101010010000000101
+PC: 20 : instruction = 101010010000000101
+inst_addr   20: 101010010000000101
+store8bit R1=0101101001011010 im=0000000101
+write mem    5: 0101101001011010
+inst_addr   20: 101010010000000101
+inst_addr   20: 101010010000000101
+write mem    5: 0101101001011010
+write mem    5: 0101101001011010
+inst_addr   21: 101010100000000110
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   21: 101010100000000110
+PC: 21 : instruction = 101010100000000110
+inst_addr   21: 101010100000000110
+store8bit R2=0101101011010100 im=0000000110
+inst_addr   21: 101010100000000110
+write mem    6: 0101101011010100
+write mem    6: 0101101011010100
+inst_addr   21: 101010100000000110
+inst_addr   22: 101010000000000111
+write mem    6: 0101101011010100
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   22: 101010000000000111
+PC: 22 : instruction = 101010000000000111
+inst_addr   22: 101010000000000111
+store8bit R0=0101101001110010 im=0000000111
+write mem    7: 0101101001110010
+inst_addr   22: 101010000000000111
+inst_addr   22: 101010000000000111
+write mem    7: 0101101001110010
+write mem    7: 0101101001110010
+inst_addr   23: 100110010000000101
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000100111010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   23: 100110010000000101
+PC: 23 : instruction = 100110010000000101
+inst_addr   23: 100110010000000101
+load16bit R1 im=0000000101
+inst_addr   23: 100110010000000101
+inst_addr   23: 100110010000000101
+inst_addr   24: 100110100000000111
+======== another instruction ========
+H00: 0000000000010100
+H01: 0101101001011010
+H10: 0000000000011000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   24: 100110100000000111
+PC: 24 : instruction = 100110100000000111
+inst_addr   24: 100110100000000111
+load16bit R2 im=0000000111
+inst_addr   24: 100110100000000111
+inst_addr   24: 100110100000000111
+inst_addr   25: 001100000000001001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0101101001011010
+H10: 0101101001110010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   25: 001100000000001001
+PC: 25 : instruction = 001100000000001001
+inst_addr   25: 001100000000001001
+mul16bit R2=0101101001110010 R1=0101101001011010
+inst_addr   25: 001100000000001001
+inst_addr   25: 001100000000001001
+inst_addr   26: 000110000000001001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0101101001011010
+H10: 1110000000010100
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   26: 000110000000001001
+PC: 26 : instruction = 000110000000001001
+inst_addr   26: 000110000000001001
+sub16bit R2=1110000000010100 R1=0101101001011010
+inst_addr   26: 000110000000001001
+inst_addr   26: 000110000000001001
+inst_addr   27: 011000000000000001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0101101001011010
+H10: 1000010110111010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   27: 011000000000000001
+PC: 27 : instruction = 011000000000000001
+inst_addr   27: 011000000000000001
+Rshift16bit R1=0101101001011010
+inst_addr   27: 011000000000000001
+inst_addr   27: 011000000000000001
+inst_addr   28: 010101000000000010
+======== another instruction ========
+H00: 0000000000010100
+H01: 0010110100101101
+H10: 1000010110111010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   28: 010101000000000010
+PC: 28 : instruction = 010101000000000010
+inst_addr   28: 010101000000000010
+Lshift16bit R2=1000010110111010
+inst_addr   28: 010101000000000010
+inst_addr   28: 010101000000000010
+inst_addr   29: 000011100000001110
+======== another instruction ========
+H00: 0000000000010100
+H01: 0010110100101101
+H10: 0000101101110100
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   29: 000011100000001110
+PC: 29 : instruction = 000011100000001110
+inst_addr   29: 000011100000001110
+add16bit R2=0000101101110100 im=0000001110
+inst_addr   29: 000011100000001110
+inst_addr   29: 000011100000001110
+inst_addr   30: 001001100000001110
+======== another instruction ========
+H00: 0000000000010100
+H01: 0010110100101101
+H10: 0000101110000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   30: 001001100000001110
+PC: 30 : instruction = 001001100000001110
+inst_addr   30: 001001100000001110
+sub16bit R2=0000101110000010 im=0000001110
+inst_addr   30: 001001100000001110
+inst_addr   30: 001001100000001110
+inst_addr   31: 100001000000000010
+======== another instruction ========
+H00: 0000000000010100
+H01: 0010110100101101
+H10: 0000101101110100
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   31: 100001000000000010
+PC: 31 : instruction = 100001000000000010
+inst_addr   31: 100001000000000010
+not16bit R2=0000101101110100
+inst_addr   31: 100001000000000010
+inst_addr   31: 100001000000000010
+inst_addr   32: 011011000000000100
+======== another instruction ========
+H00: 0000000000010100
+H01: 0010110100101101
+H10: 1111010010001011
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   32: 011011000000000100
+PC: 32 : instruction = 011011000000000100
+inst_addr   32: 011011000000000100
+and16bit R1=0010110100101101 R0=0000000000010100
+inst_addr   32: 011011000000000100
+inst_addr   32: 011011000000000100
+inst_addr   33: 011110000000001001
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000000000100
+H10: 1111010010001011
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   33: 011110000000001001
+PC: 33 : instruction = 011110000000001001
+inst_addr   33: 011110000000001001
+or16bit R2=1111010010001011 R1=0000000000000100
+inst_addr   33: 011110000000001001
+inst_addr   33: 011110000000001001
+inst_addr   34: 101100000000001111
+======== another instruction ========
+H00: 0000000000010100
+H01: 0000000000000100
+H10: 1111010010001111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   34: 101100000000001111
+PC: 34 : instruction = 101100000000001111
+inst_addr   34: 101100000000001111
+set16bit R0 im=0000001111
+inst_addr   34: 101100000000001111
+inst_addr   34: 101100000000001111
+inst_addr   35: 101100010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 1111010010001111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   35: 101100010000000100
+PC: 35 : instruction = 101100010000000100
+inst_addr   35: 101100010000000100
+set16bit R1 im=0000000100
+inst_addr   35: 101100010000000100
+inst_addr   35: 101100010000000100
+inst_addr   36: 101100100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 1111010010001111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   36: 101100100000000010
+PC: 36 : instruction = 101100100000000010
+inst_addr   36: 101100100000000010
+set16bit R2 im=0000000010
+inst_addr   36: 101100100000000010
+inst_addr   36: 101100100000000010
+inst_addr   37: 010010000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   37: 010010000000000110
+PC: 37 : instruction = 010010000000000110
+inst_addr   37: 010010000000000110
+MAC16bit R0=0000000000001111 R1=0000000000000100 R2=0000000000000010
+inst_addr   37: 010010000000000110
+inst_addr   37: 010010000000000110
+inst_addr   38: 001001000000001000
+======== another instruction ========
+H00: 0000000000010111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   38: 001001000000001000
+PC: 38 : instruction = 001001000000001000
+inst_addr   38: 001001000000001000
+sub16bit R0=0000000000010111 im=0000001000
+inst_addr   38: 001001000000001000
+inst_addr   38: 001001000000001000
+inst_addr   39: 001111010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   39: 001111010000001101
+PC: 39 : instruction = 001111010000001101
+inst_addr   39: 001111010000001101
+mul16bit R1=0000000000000100 im=0000001101
+inst_addr   39: 001111010000001101
+inst_addr   39: 001111010000001101
+inst_addr   40: 101001010000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   40: 101001010000000111
+PC: 40 : instruction = 101001010000000111
+inst_addr   40: 101001010000000111
+store16bit R1=0000000000110100 im=0000000111
+write mem    7: 0000000000110100
+inst_addr   40: 101001010000000111
+inst_addr   40: 101001010000000111
+write mem    7: 0000000000110100
+write mem    7: 0000000000110100
+inst_addr   41: 101001100000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   41: 101001100000000100
+PC: 41 : instruction = 101001100000000100
+inst_addr   41: 101001100000000100
+store16bit R2=0000000000000010 im=0000000100
+inst_addr   41: 101001100000000100
+write mem    4: 0000000000000010
+write mem    4: 0000000000000010
+inst_addr   41: 101001100000000100
+inst_addr   42: 101001000000001000
+write mem    4: 0000000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   42: 101001000000001000
+PC: 42 : instruction = 101001000000001000
+inst_addr   42: 101001000000001000
+store16bit R0=0000000000001111 im=0000001000
+write mem    8: 0000000000001111
+inst_addr   42: 101001000000001000
+inst_addr   42: 101001000000001000
+write mem    8: 0000000000001111
+write mem    8: 0000000000001111
+inst_addr   43: 100111010000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101001011010
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   43: 100111010000000110
+PC: 43 : instruction = 100111010000000110
+inst_addr   43: 100111010000000110
+load8bit R1 im=0000000110
+inst_addr   43: 100111010000000110
+inst_addr   43: 100111010000000110
+inst_addr   44: 100111100000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101011010100
+Oset10: 0101101011010100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   44: 100111100000000111
+PC: 44 : instruction = 100111100000000111
+inst_addr   44: 100111100000000111
+load8bit R2 im=0000000111
+inst_addr   44: 100111100000000111
+inst_addr   44: 100111100000000111
+inst_addr   45: 100111000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0101101001110010
+Oset01: 0101101011010100
+Oset10: 0000000000110100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   45: 100111000000001000
+PC: 45 : instruction = 100111000000001000
+inst_addr   45: 100111000000001000
+load8bit R0 im=0000001000
+inst_addr   45: 100111000000001000
+inst_addr   45: 100111000000001000
+inst_addr   46: 011001000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0101101011010100
+Oset10: 0000000000110100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   46: 011001000000000001
+PC: 46 : instruction = 011001000000000001
+inst_addr   46: 011001000000000001
+Rshift8bit R1=0101101011010100
+inst_addr   46: 011001000000000001
+inst_addr   46: 011001000000000001
+inst_addr   47: 010110000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0010110101101010
+Oset10: 0000000000110100
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   47: 010110000000000010
+PC: 47 : instruction = 010110000000000010
+inst_addr   47: 010110000000000010
+Lshift8bit R2=0000000000110100
+inst_addr   47: 010110000000000010
+inst_addr   47: 010110000000000010
+inst_addr   48: 000100100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0010110101101010
+Oset10: 0000000001101000
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   48: 000100100000001110
+PC: 48 : instruction = 000100100000001110
+inst_addr   48: 000100100000001110
+add8bit R2=0000000001101000 im=0000001110
+inst_addr   48: 000100100000001110
+inst_addr   48: 000100100000001110
+inst_addr   49: 001010100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0010110101101010
+Oset10: 0000111001110110
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   49: 001010100000001110
+PC: 49 : instruction = 001010100000001110
+inst_addr   49: 001010100000001110
+sub8bit R2=0000111001110110 im=0000001110
+inst_addr   49: 001010100000001110
+inst_addr   49: 001010100000001110
+inst_addr   50: 100010000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0010110101101010
+Oset10: 0000000001101000
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   50: 100010000000000010
+PC: 50 : instruction = 100010000000000010
+inst_addr   50: 100010000000000010
+not8bit R2=0000000001101000
+inst_addr   50: 100010000000000010
+inst_addr   50: 100010000000000010
+inst_addr   51: 011100000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0010110101101010
+Oset10: 1111111110010111
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   51: 011100000000000100
+PC: 51 : instruction = 011100000000000100
+inst_addr   51: 011100000000000100
+and8bit R1=0010110101101010 R0=0000000000001111
+inst_addr   51: 011100000000000100
+inst_addr   51: 011100000000000100
+inst_addr   52: 011111000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110010111
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   52: 011111000000001001
+PC: 52 : instruction = 011111000000001001
+inst_addr   52: 011111000000001001
+or8bit R2=1111111110010111 R1=0000000000001010
+inst_addr   52: 011111000000001001
+inst_addr   52: 011111000000001001
+inst_addr   53: 101101000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   53: 101101000000001111
+PC: 53 : instruction = 101101000000001111
+inst_addr   53: 101101000000001111
+set8bit R0 im=0000001111
+inst_addr   53: 101101000000001111
+inst_addr   53: 101101000000001111
+inst_addr   54: 101101010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   54: 101101010000000100
+PC: 54 : instruction = 101101010000000100
+inst_addr   54: 101101010000000100
+set8bit R1 im=0000000100
+inst_addr   54: 101101010000000100
+inst_addr   54: 101101010000000100
+inst_addr   55: 101101100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 1111111110011111
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   55: 101101100000000010
+PC: 55 : instruction = 101101100000000010
+inst_addr   55: 101101100000000010
+set8bit R2 im=0000000010
+inst_addr   55: 101101100000000010
+inst_addr   55: 101101100000000010
+inst_addr   56: 010011000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   56: 010011000000000110
+PC: 56 : instruction = 010011000000000110
+inst_addr   56: 010011000000000110
+MAC8bit R0=0000111100001111 R1=0000010000000100 R2=0000001000000010
+inst_addr   56: 010011000000000110
+inst_addr   56: 010011000000000110
+inst_addr   57: 001010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0001011100010111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   57: 001010000000001000
+PC: 57 : instruction = 001010000000001000
+inst_addr   57: 001010000000001000
+sub8bit R0=0001011100010111 im=0000001000
+inst_addr   57: 001010000000001000
+inst_addr   57: 001010000000001000
+inst_addr   58: 010000010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   58: 010000010000001101
+PC: 58 : instruction = 010000010000001101
+inst_addr   58: 010000010000001101
+mul8bit R1=0000010000000100 im=0000001101
+inst_addr   58: 010000010000001101
+inst_addr   58: 010000010000001101
+inst_addr   59: 101010010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   59: 101010010000001001
+PC: 59 : instruction = 101010010000001001
+inst_addr   59: 101010010000001001
+store8bit R1=0011010000110100 im=0000001001
+inst_addr   59: 101010010000001001
+write mem    9: 0011010000110100
+write mem    9: 0011010000110100
+inst_addr   59: 101010010000001001
+inst_addr   60: 101010100000000110
+write mem    9: 0011010000110100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   60: 101010100000000110
+PC: 60 : instruction = 101010100000000110
+inst_addr   60: 101010100000000110
+store8bit R2=0000001000000010 im=0000000110
+write mem    6: 0000001000000010
+inst_addr   60: 101010100000000110
+inst_addr   60: 101010100000000110
+write mem    6: 0000001000000010
+write mem    6: 0000001000000010
+inst_addr   61: 101010000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   61: 101010000000000111
+PC: 61 : instruction = 101010000000000111
+inst_addr   61: 101010000000000111
+store8bit R0=0000111100001111 im=0000000111
+inst_addr   61: 101010000000000111
+write mem    7: 0000111100001111
+write mem    7: 0000111100001111
+inst_addr   61: 101010000000000111
+inst_addr   62: 101000010000001001
+write mem    7: 0000111100001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: xxxxxxxxxxxxxxxx
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   62: 101000010000001001
+PC: 62 : instruction = 101000010000001001
+inst_addr   62: 101000010000001001
+load4bit R1 im=0000001001
+inst_addr   62: 101000010000001001
+inst_addr   62: 101000010000001001
+inst_addr   63: 101000100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: 0011010000110100
+Qset10: xxxxxxxxxxxxxxxx
+           -- execute --             
+inst_addr   63: 101000100000000110
+PC: 63 : instruction = 101000100000000110
+inst_addr   63: 101000100000000110
+load4bit R2 im=0000000110
+inst_addr   63: 101000100000000110
+inst_addr   63: 101000100000000110
+inst_addr   64: 101000000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: xxxxxxxxxxxxxxxx
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   64: 101000000000000111
+PC: 64 : instruction = 101000000000000111
+inst_addr   64: 101000000000000111
+load4bit R0 im=0000000111
+inst_addr   64: 101000000000000111
+inst_addr   64: 101000000000000111
+inst_addr   65: 101110100001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   65: 101110100001011010
+PC: 65 : instruction = 101110100001011010
+inst_addr   65: 101110100001011010
+set4bit R2 im=0001011010
+inst_addr   65: 101110100001011010
+inst_addr   65: 101110100001011010
+inst_addr   66: 011010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   66: 011010000000000001
+PC: 66 : instruction = 011010000000000001
+inst_addr   66: 011010000000000001
+Rshift4bit R1=0011010000110100
+inst_addr   66: 011010000000000001
+inst_addr   66: 011010000000000001
+inst_addr   67: 010111000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   67: 010111000000000010
+PC: 67 : instruction = 010111000000000010
+inst_addr   67: 010111000000000010
+Lshift4bit R2=1010101010101010
+inst_addr   67: 010111000000000010
+inst_addr   67: 010111000000000010
+inst_addr   68: 000101100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   68: 000101100000001110
+PC: 68 : instruction = 000101100000001110
+inst_addr   68: 000101100000001110
+add4bit R2=0100010001000100 im=0000001110
+inst_addr   68: 000101100000001110
+inst_addr   68: 000101100000001110
+inst_addr   69: 001011100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   69: 001011100000001110
+PC: 69 : instruction = 001011100000001110
+inst_addr   69: 001011100000001110
+sub4bit R2=0010001000100010 im=0000001110
+inst_addr   69: 001011100000001110
+inst_addr   69: 001011100000001110
+inst_addr   70: 100011000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   70: 100011000000000010
+PC: 70 : instruction = 100011000000000010
+inst_addr   70: 100011000000000010
+not4bit R2=0100010001000100
+inst_addr   70: 100011000000000010
+inst_addr   70: 100011000000000010
+inst_addr   71: 011101000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   71: 011101000000000100
+PC: 71 : instruction = 011101000000000100
+inst_addr   71: 011101000000000100
+and4bit R1=0001001000010010 R0=0000111100001111
+inst_addr   71: 011101000000000100
+inst_addr   71: 011101000000000100
+inst_addr   72: 100000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   72: 100000000000001001
+PC: 72 : instruction = 100000000000001001
+inst_addr   72: 100000000000001001
+or4bit R2=1011101110111011 R1=0000001000000010
+inst_addr   72: 100000000000001001
+inst_addr   72: 100000000000001001
+inst_addr   73: 101110000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   73: 101110000000001111
+PC: 73 : instruction = 101110000000001111
+inst_addr   73: 101110000000001111
+set4bit R0 im=0000001111
+inst_addr   73: 101110000000001111
+inst_addr   73: 101110000000001111
+inst_addr   74: 101110010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   74: 101110010000000100
+PC: 74 : instruction = 101110010000000100
+inst_addr   74: 101110010000000100
+set4bit R1 im=0000000100
+inst_addr   74: 101110010000000100
+inst_addr   74: 101110010000000100
+inst_addr   75: 101110100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   75: 101110100000000010
+PC: 75 : instruction = 101110100000000010
+inst_addr   75: 101110100000000010
+set4bit R2 im=0000000010
+inst_addr   75: 101110100000000010
+inst_addr   75: 101110100000000010
+inst_addr   76: 010100000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   76: 010100000000000110
+PC: 76 : instruction = 010100000000000110
+inst_addr   76: 010100000000000110
+MAC4bit R0=1111111111111111 R1=0100010001000100 R2=0010001000100010
+inst_addr   76: 010100000000000110
+inst_addr   76: 010100000000000110
+inst_addr   77: 001011000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0111011101110111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   77: 001011000000001000
+PC: 77 : instruction = 001011000000001000
+inst_addr   77: 001011000000001000
+sub4bit R0=0111011101110111 im=0000001000
+inst_addr   77: 001011000000001000
+inst_addr   77: 001011000000001000
+inst_addr   78: 010001010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   78: 010001010000000101
+PC: 78 : instruction = 010001010000000101
+inst_addr   78: 010001010000000101
+mul4bit R1=0100010001000100 im=0000000101
+inst_addr   78: 010001010000000101
+inst_addr   78: 010001010000000101
+inst_addr   79: 101110010001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   79: 101110010001011010
+PC: 79 : instruction = 101110010001011010
+inst_addr   79: 101110010001011010
+set4bit R1 im=0001011010
+inst_addr   79: 101110010001011010
+inst_addr   79: 101110010001011010
+inst_addr   80: 000010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   80: 000010000000000001
+PC: 80 : instruction = 000010000000000001
+inst_addr   80: 000010000000000001
+add4bit R0=1111111111111111 R1=1010101010101010
+inst_addr   80: 000010000000000001
+inst_addr   80: 000010000000000001
+inst_addr   81: 000010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   81: 000010000000001000
+PC: 81 : instruction = 000010000000001000
+inst_addr   81: 000010000000001000
+add4bit R2=0010001000100010 R0=1001100110011001
+inst_addr   81: 000010000000001000
+inst_addr   81: 000010000000001000
+inst_addr   82: 001000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   82: 001000000000001001
+PC: 82 : instruction = 001000000000001001
+inst_addr   82: 001000000000001001
+sub4bit R2=1011101110111011 R1=1010101010101010
+inst_addr   82: 001000000000001001
+inst_addr   82: 001000000000001001
+inst_addr   83: 001110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0001000100010001
+           -- execute --             
+inst_addr   83: 001110000000001001
+PC: 83 : instruction = 001110000000001001
+inst_addr   83: 001110000000001001
+mul4bit R2=0001000100010001 R1=1010101010101010
+inst_addr   83: 001110000000001001
+inst_addr   83: 001110000000001001
+inst_addr   84: 101011010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   84: 101011010000001001
+PC: 84 : instruction = 101011010000001001
+inst_addr   84: 101011010000001001
+store4bit R1=1010101010101010 im=0000001001
+write mem    9: 1010101010101010
+inst_addr   84: 101011010000001001
+inst_addr   84: 101011010000001001
+write mem    9: 1010101010101010
+write mem    9: 1010101010101010
+inst_addr   85: 101011100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   85: 101011100000000110
+PC: 85 : instruction = 101011100000000110
+inst_addr   85: 101011100000000110
+store4bit R2=1010101010101010 im=0000000110
+inst_addr   85: 101011100000000110
+write mem    6: 1010101010101010
+write mem    6: 1010101010101010
+inst_addr   85: 101011100000000110
+inst_addr   86: 101011000000000111
+write mem    6: 1010101010101010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   86: 101011000000000111
+PC: 86 : instruction = 101011000000000111
+inst_addr   86: 101011000000000111
+store4bit R0=1001100110011001 im=0000000111
+write mem    7: 1001100110011001
+inst_addr   86: 101011000000000111
+inst_addr   86: 101011000000000111
+write mem    7: 1001100110011001
+write mem    7: 1001100110011001
+inst_addr   87: 100100000000010000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   87: 100100000000010000
+PC: 87 : instruction = 100100000000010000
+inst_addr   87: 100100000000010000
+loopjump LC=   2 im=  16
+inst_addr   87: 100100000000010000
+inst_addr   87: 100100000000010000
+inst_addr   16: 000001000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   16: 000001000000000001
+PC: 16 : instruction = 000001000000000001
+inst_addr   16: 000001000000000001
+add8bit R0=0000111100001111 R1=0011010000110100
+inst_addr   16: 000001000000000001
+inst_addr   16: 000001000000000001
+inst_addr   17: 000001000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   17: 000001000000001000
+PC: 17 : instruction = 000001000000001000
+inst_addr   17: 000001000000001000
+add8bit R2=0000001000000010 R0=0100001101000011
+inst_addr   17: 000001000000001000
+inst_addr   17: 000001000000001000
+inst_addr   18: 000111000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0100010101000101
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   18: 000111000000001001
+PC: 18 : instruction = 000111000000001001
+inst_addr   18: 000111000000001001
+sub8bit R2=0100010101000101 R1=0011010000110100
+inst_addr   18: 000111000000001001
+inst_addr   18: 000111000000001001
+inst_addr   19: 001101000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0001000100010001
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   19: 001101000000001001
+PC: 19 : instruction = 001101000000001001
+inst_addr   19: 001101000000001001
+mul8bit R2=0001000100010001 R1=0011010000110100
+inst_addr   19: 001101000000001001
+inst_addr   19: 001101000000001001
+inst_addr   20: 101010010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   20: 101010010000000101
+PC: 20 : instruction = 101010010000000101
+inst_addr   20: 101010010000000101
+store8bit R1=0011010000110100 im=0000000101
+write mem    5: 0011010000110100
+inst_addr   20: 101010010000000101
+inst_addr   20: 101010010000000101
+write mem    5: 0011010000110100
+write mem    5: 0011010000110100
+inst_addr   21: 101010100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   21: 101010100000000110
+PC: 21 : instruction = 101010100000000110
+inst_addr   21: 101010100000000110
+store8bit R2=0111010001110100 im=0000000110
+inst_addr   21: 101010100000000110
+write mem    6: 0111010001110100
+write mem    6: 0111010001110100
+inst_addr   21: 101010100000000110
+inst_addr   22: 101010000000000111
+write mem    6: 0111010001110100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   22: 101010000000000111
+PC: 22 : instruction = 101010000000000111
+inst_addr   22: 101010000000000111
+store8bit R0=0100001101000011 im=0000000111
+write mem    7: 0100001101000011
+inst_addr   22: 101010000000000111
+inst_addr   22: 101010000000000111
+write mem    7: 0100001101000011
+write mem    7: 0100001101000011
+inst_addr   23: 100110010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   23: 100110010000000101
+PC: 23 : instruction = 100110010000000101
+inst_addr   23: 100110010000000101
+load16bit R1 im=0000000101
+inst_addr   23: 100110010000000101
+inst_addr   23: 100110010000000101
+inst_addr   24: 100110100000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   24: 100110100000000111
+PC: 24 : instruction = 100110100000000111
+inst_addr   24: 100110100000000111
+load16bit R2 im=0000000111
+inst_addr   24: 100110100000000111
+inst_addr   24: 100110100000000111
+inst_addr   25: 001100000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0100001101000011
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   25: 001100000000001001
+PC: 25 : instruction = 001100000000001001
+inst_addr   25: 001100000000001001
+mul16bit R2=0100001101000011 R1=0011010000110100
+inst_addr   25: 001100000000001001
+inst_addr   25: 001100000000001001
+inst_addr   26: 000110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0100010110011100
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   26: 000110000000001001
+PC: 26 : instruction = 000110000000001001
+inst_addr   26: 000110000000001001
+sub16bit R2=0100010110011100 R1=0011010000110100
+inst_addr   26: 000110000000001001
+inst_addr   26: 000110000000001001
+inst_addr   27: 011000000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0001000101101000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   27: 011000000000000001
+PC: 27 : instruction = 011000000000000001
+inst_addr   27: 011000000000000001
+Rshift16bit R1=0011010000110100
+inst_addr   27: 011000000000000001
+inst_addr   27: 011000000000000001
+inst_addr   28: 010101000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0001000101101000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   28: 010101000000000010
+PC: 28 : instruction = 010101000000000010
+inst_addr   28: 010101000000000010
+Lshift16bit R2=0001000101101000
+inst_addr   28: 010101000000000010
+inst_addr   28: 010101000000000010
+inst_addr   29: 000011100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011010000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   29: 000011100000001110
+PC: 29 : instruction = 000011100000001110
+inst_addr   29: 000011100000001110
+add16bit R2=0010001011010000 im=0000001110
+inst_addr   29: 000011100000001110
+inst_addr   29: 000011100000001110
+inst_addr   30: 001001100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011011110
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   30: 001001100000001110
+PC: 30 : instruction = 001001100000001110
+inst_addr   30: 001001100000001110
+sub16bit R2=0010001011011110 im=0000001110
+inst_addr   30: 001001100000001110
+inst_addr   30: 001001100000001110
+inst_addr   31: 100001000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011010000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   31: 100001000000000010
+PC: 31 : instruction = 100001000000000010
+inst_addr   31: 100001000000000010
+not16bit R2=0010001011010000
+inst_addr   31: 100001000000000010
+inst_addr   31: 100001000000000010
+inst_addr   32: 011011000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   32: 011011000000000100
+PC: 32 : instruction = 011011000000000100
+inst_addr   32: 011011000000000100
+and16bit R1=0001101000011010 R0=0000000000001111
+inst_addr   32: 011011000000000100
+inst_addr   32: 011011000000000100
+inst_addr   33: 011110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   33: 011110000000001001
+PC: 33 : instruction = 011110000000001001
+inst_addr   33: 011110000000001001
+or16bit R2=1101110100101111 R1=0000000000001010
+inst_addr   33: 011110000000001001
+inst_addr   33: 011110000000001001
+inst_addr   34: 101100000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   34: 101100000000001111
+PC: 34 : instruction = 101100000000001111
+inst_addr   34: 101100000000001111
+set16bit R0 im=0000001111
+inst_addr   34: 101100000000001111
+inst_addr   34: 101100000000001111
+inst_addr   35: 101100010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   35: 101100010000000100
+PC: 35 : instruction = 101100010000000100
+inst_addr   35: 101100010000000100
+set16bit R1 im=0000000100
+inst_addr   35: 101100010000000100
+inst_addr   35: 101100010000000100
+inst_addr   36: 101100100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   36: 101100100000000010
+PC: 36 : instruction = 101100100000000010
+inst_addr   36: 101100100000000010
+set16bit R2 im=0000000010
+inst_addr   36: 101100100000000010
+inst_addr   36: 101100100000000010
+inst_addr   37: 010010000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   37: 010010000000000110
+PC: 37 : instruction = 010010000000000110
+inst_addr   37: 010010000000000110
+MAC16bit R0=0000000000001111 R1=0000000000000100 R2=0000000000000010
+inst_addr   37: 010010000000000110
+inst_addr   37: 010010000000000110
+inst_addr   38: 001001000000001000
+======== another instruction ========
+H00: 0000000000010111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   38: 001001000000001000
+PC: 38 : instruction = 001001000000001000
+inst_addr   38: 001001000000001000
+sub16bit R0=0000000000010111 im=0000001000
+inst_addr   38: 001001000000001000
+inst_addr   38: 001001000000001000
+inst_addr   39: 001111010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   39: 001111010000001101
+PC: 39 : instruction = 001111010000001101
+inst_addr   39: 001111010000001101
+mul16bit R1=0000000000000100 im=0000001101
+inst_addr   39: 001111010000001101
+inst_addr   39: 001111010000001101
+inst_addr   40: 101001010000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   40: 101001010000000111
+PC: 40 : instruction = 101001010000000111
+inst_addr   40: 101001010000000111
+store16bit R1=0000000000110100 im=0000000111
+write mem    7: 0000000000110100
+inst_addr   40: 101001010000000111
+inst_addr   40: 101001010000000111
+write mem    7: 0000000000110100
+write mem    7: 0000000000110100
+inst_addr   41: 101001100000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   41: 101001100000000100
+PC: 41 : instruction = 101001100000000100
+inst_addr   41: 101001100000000100
+store16bit R2=0000000000000010 im=0000000100
+inst_addr   41: 101001100000000100
+write mem    4: 0000000000000010
+write mem    4: 0000000000000010
+inst_addr   41: 101001100000000100
+inst_addr   42: 101001000000001000
+write mem    4: 0000000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   42: 101001000000001000
+PC: 42 : instruction = 101001000000001000
+inst_addr   42: 101001000000001000
+store16bit R0=0000000000001111 im=0000001000
+write mem    8: 0000000000001111
+inst_addr   42: 101001000000001000
+inst_addr   42: 101001000000001000
+write mem    8: 0000000000001111
+write mem    8: 0000000000001111
+inst_addr   43: 100111010000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   43: 100111010000000110
+PC: 43 : instruction = 100111010000000110
+inst_addr   43: 100111010000000110
+load8bit R1 im=0000000110
+inst_addr   43: 100111010000000110
+inst_addr   43: 100111010000000110
+inst_addr   44: 100111100000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0111010001110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   44: 100111100000000111
+PC: 44 : instruction = 100111100000000111
+inst_addr   44: 100111100000000111
+load8bit R2 im=0000000111
+inst_addr   44: 100111100000000111
+inst_addr   44: 100111100000000111
+inst_addr   45: 100111000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0111010001110100
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   45: 100111000000001000
+PC: 45 : instruction = 100111000000001000
+inst_addr   45: 100111000000001000
+load8bit R0 im=0000001000
+inst_addr   45: 100111000000001000
+inst_addr   45: 100111000000001000
+inst_addr   46: 011001000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0111010001110100
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   46: 011001000000000001
+PC: 46 : instruction = 011001000000000001
+inst_addr   46: 011001000000000001
+Rshift8bit R1=0111010001110100
+inst_addr   46: 011001000000000001
+inst_addr   46: 011001000000000001
+inst_addr   47: 010110000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   47: 010110000000000010
+PC: 47 : instruction = 010110000000000010
+inst_addr   47: 010110000000000010
+Lshift8bit R2=0000000000110100
+inst_addr   47: 010110000000000010
+inst_addr   47: 010110000000000010
+inst_addr   48: 000100100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000001101000
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   48: 000100100000001110
+PC: 48 : instruction = 000100100000001110
+inst_addr   48: 000100100000001110
+add8bit R2=0000000001101000 im=0000001110
+inst_addr   48: 000100100000001110
+inst_addr   48: 000100100000001110
+inst_addr   49: 001010100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000111001110110
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   49: 001010100000001110
+PC: 49 : instruction = 001010100000001110
+inst_addr   49: 001010100000001110
+sub8bit R2=0000111001110110 im=0000001110
+inst_addr   49: 001010100000001110
+inst_addr   49: 001010100000001110
+inst_addr   50: 100010000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000001101000
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   50: 100010000000000010
+PC: 50 : instruction = 100010000000000010
+inst_addr   50: 100010000000000010
+not8bit R2=0000000001101000
+inst_addr   50: 100010000000000010
+inst_addr   50: 100010000000000010
+inst_addr   51: 011100000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 1111111110010111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   51: 011100000000000100
+PC: 51 : instruction = 011100000000000100
+inst_addr   51: 011100000000000100
+and8bit R1=0011101000111010 R0=0000000000001111
+inst_addr   51: 011100000000000100
+inst_addr   51: 011100000000000100
+inst_addr   52: 011111000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110010111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   52: 011111000000001001
+PC: 52 : instruction = 011111000000001001
+inst_addr   52: 011111000000001001
+or8bit R2=1111111110010111 R1=0000000000001010
+inst_addr   52: 011111000000001001
+inst_addr   52: 011111000000001001
+inst_addr   53: 101101000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   53: 101101000000001111
+PC: 53 : instruction = 101101000000001111
+inst_addr   53: 101101000000001111
+set8bit R0 im=0000001111
+inst_addr   53: 101101000000001111
+inst_addr   53: 101101000000001111
+inst_addr   54: 101101010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   54: 101101010000000100
+PC: 54 : instruction = 101101010000000100
+inst_addr   54: 101101010000000100
+set8bit R1 im=0000000100
+inst_addr   54: 101101010000000100
+inst_addr   54: 101101010000000100
+inst_addr   55: 101101100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   55: 101101100000000010
+PC: 55 : instruction = 101101100000000010
+inst_addr   55: 101101100000000010
+set8bit R2 im=0000000010
+inst_addr   55: 101101100000000010
+inst_addr   55: 101101100000000010
+inst_addr   56: 010011000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   56: 010011000000000110
+PC: 56 : instruction = 010011000000000110
+inst_addr   56: 010011000000000110
+MAC8bit R0=0000111100001111 R1=0000010000000100 R2=0000001000000010
+inst_addr   56: 010011000000000110
+inst_addr   56: 010011000000000110
+inst_addr   57: 001010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0001011100010111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   57: 001010000000001000
+PC: 57 : instruction = 001010000000001000
+inst_addr   57: 001010000000001000
+sub8bit R0=0001011100010111 im=0000001000
+inst_addr   57: 001010000000001000
+inst_addr   57: 001010000000001000
+inst_addr   58: 010000010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   58: 010000010000001101
+PC: 58 : instruction = 010000010000001101
+inst_addr   58: 010000010000001101
+mul8bit R1=0000010000000100 im=0000001101
+inst_addr   58: 010000010000001101
+inst_addr   58: 010000010000001101
+inst_addr   59: 101010010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   59: 101010010000001001
+PC: 59 : instruction = 101010010000001001
+inst_addr   59: 101010010000001001
+store8bit R1=0011010000110100 im=0000001001
+inst_addr   59: 101010010000001001
+write mem    9: 0011010000110100
+write mem    9: 0011010000110100
+inst_addr   59: 101010010000001001
+inst_addr   60: 101010100000000110
+write mem    9: 0011010000110100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   60: 101010100000000110
+PC: 60 : instruction = 101010100000000110
+inst_addr   60: 101010100000000110
+store8bit R2=0000001000000010 im=0000000110
+write mem    6: 0000001000000010
+inst_addr   60: 101010100000000110
+inst_addr   60: 101010100000000110
+write mem    6: 0000001000000010
+write mem    6: 0000001000000010
+inst_addr   61: 101010000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   61: 101010000000000111
+PC: 61 : instruction = 101010000000000111
+inst_addr   61: 101010000000000111
+store8bit R0=0000111100001111 im=0000000111
+inst_addr   61: 101010000000000111
+write mem    7: 0000111100001111
+write mem    7: 0000111100001111
+inst_addr   61: 101010000000000111
+inst_addr   62: 101000010000001001
+write mem    7: 0000111100001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   62: 101000010000001001
+PC: 62 : instruction = 101000010000001001
+inst_addr   62: 101000010000001001
+load4bit R1 im=0000001001
+inst_addr   62: 101000010000001001
+inst_addr   62: 101000010000001001
+inst_addr   63: 101000100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 0011010000110100
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   63: 101000100000000110
+PC: 63 : instruction = 101000100000000110
+inst_addr   63: 101000100000000110
+load4bit R2 im=0000000110
+inst_addr   63: 101000100000000110
+inst_addr   63: 101000100000000110
+inst_addr   64: 101000000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   64: 101000000000000111
+PC: 64 : instruction = 101000000000000111
+inst_addr   64: 101000000000000111
+load4bit R0 im=0000000111
+inst_addr   64: 101000000000000111
+inst_addr   64: 101000000000000111
+inst_addr   65: 101110100001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   65: 101110100001011010
+PC: 65 : instruction = 101110100001011010
+inst_addr   65: 101110100001011010
+set4bit R2 im=0001011010
+inst_addr   65: 101110100001011010
+inst_addr   65: 101110100001011010
+inst_addr   66: 011010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   66: 011010000000000001
+PC: 66 : instruction = 011010000000000001
+inst_addr   66: 011010000000000001
+Rshift4bit R1=0011010000110100
+inst_addr   66: 011010000000000001
+inst_addr   66: 011010000000000001
+inst_addr   67: 010111000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   67: 010111000000000010
+PC: 67 : instruction = 010111000000000010
+inst_addr   67: 010111000000000010
+Lshift4bit R2=1010101010101010
+inst_addr   67: 010111000000000010
+inst_addr   67: 010111000000000010
+inst_addr   68: 000101100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   68: 000101100000001110
+PC: 68 : instruction = 000101100000001110
+inst_addr   68: 000101100000001110
+add4bit R2=0100010001000100 im=0000001110
+inst_addr   68: 000101100000001110
+inst_addr   68: 000101100000001110
+inst_addr   69: 001011100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   69: 001011100000001110
+PC: 69 : instruction = 001011100000001110
+inst_addr   69: 001011100000001110
+sub4bit R2=0010001000100010 im=0000001110
+inst_addr   69: 001011100000001110
+inst_addr   69: 001011100000001110
+inst_addr   70: 100011000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   70: 100011000000000010
+PC: 70 : instruction = 100011000000000010
+inst_addr   70: 100011000000000010
+not4bit R2=0100010001000100
+inst_addr   70: 100011000000000010
+inst_addr   70: 100011000000000010
+inst_addr   71: 011101000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   71: 011101000000000100
+PC: 71 : instruction = 011101000000000100
+inst_addr   71: 011101000000000100
+and4bit R1=0001001000010010 R0=0000111100001111
+inst_addr   71: 011101000000000100
+inst_addr   71: 011101000000000100
+inst_addr   72: 100000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   72: 100000000000001001
+PC: 72 : instruction = 100000000000001001
+inst_addr   72: 100000000000001001
+or4bit R2=1011101110111011 R1=0000001000000010
+inst_addr   72: 100000000000001001
+inst_addr   72: 100000000000001001
+inst_addr   73: 101110000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   73: 101110000000001111
+PC: 73 : instruction = 101110000000001111
+inst_addr   73: 101110000000001111
+set4bit R0 im=0000001111
+inst_addr   73: 101110000000001111
+inst_addr   73: 101110000000001111
+inst_addr   74: 101110010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   74: 101110010000000100
+PC: 74 : instruction = 101110010000000100
+inst_addr   74: 101110010000000100
+set4bit R1 im=0000000100
+inst_addr   74: 101110010000000100
+inst_addr   74: 101110010000000100
+inst_addr   75: 101110100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   75: 101110100000000010
+PC: 75 : instruction = 101110100000000010
+inst_addr   75: 101110100000000010
+set4bit R2 im=0000000010
+inst_addr   75: 101110100000000010
+inst_addr   75: 101110100000000010
+inst_addr   76: 010100000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   76: 010100000000000110
+PC: 76 : instruction = 010100000000000110
+inst_addr   76: 010100000000000110
+MAC4bit R0=1111111111111111 R1=0100010001000100 R2=0010001000100010
+inst_addr   76: 010100000000000110
+inst_addr   76: 010100000000000110
+inst_addr   77: 001011000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0111011101110111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   77: 001011000000001000
+PC: 77 : instruction = 001011000000001000
+inst_addr   77: 001011000000001000
+sub4bit R0=0111011101110111 im=0000001000
+inst_addr   77: 001011000000001000
+inst_addr   77: 001011000000001000
+inst_addr   78: 010001010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   78: 010001010000000101
+PC: 78 : instruction = 010001010000000101
+inst_addr   78: 010001010000000101
+mul4bit R1=0100010001000100 im=0000000101
+inst_addr   78: 010001010000000101
+inst_addr   78: 010001010000000101
+inst_addr   79: 101110010001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   79: 101110010001011010
+PC: 79 : instruction = 101110010001011010
+inst_addr   79: 101110010001011010
+set4bit R1 im=0001011010
+inst_addr   79: 101110010001011010
+inst_addr   79: 101110010001011010
+inst_addr   80: 000010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   80: 000010000000000001
+PC: 80 : instruction = 000010000000000001
+inst_addr   80: 000010000000000001
+add4bit R0=1111111111111111 R1=1010101010101010
+inst_addr   80: 000010000000000001
+inst_addr   80: 000010000000000001
+inst_addr   81: 000010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   81: 000010000000001000
+PC: 81 : instruction = 000010000000001000
+inst_addr   81: 000010000000001000
+add4bit R2=0010001000100010 R0=1001100110011001
+inst_addr   81: 000010000000001000
+inst_addr   81: 000010000000001000
+inst_addr   82: 001000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   82: 001000000000001001
+PC: 82 : instruction = 001000000000001001
+inst_addr   82: 001000000000001001
+sub4bit R2=1011101110111011 R1=1010101010101010
+inst_addr   82: 001000000000001001
+inst_addr   82: 001000000000001001
+inst_addr   83: 001110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0001000100010001
+           -- execute --             
+inst_addr   83: 001110000000001001
+PC: 83 : instruction = 001110000000001001
+inst_addr   83: 001110000000001001
+mul4bit R2=0001000100010001 R1=1010101010101010
+inst_addr   83: 001110000000001001
+inst_addr   83: 001110000000001001
+inst_addr   84: 101011010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   84: 101011010000001001
+PC: 84 : instruction = 101011010000001001
+inst_addr   84: 101011010000001001
+store4bit R1=1010101010101010 im=0000001001
+write mem    9: 1010101010101010
+inst_addr   84: 101011010000001001
+inst_addr   84: 101011010000001001
+write mem    9: 1010101010101010
+write mem    9: 1010101010101010
+inst_addr   85: 101011100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   85: 101011100000000110
+PC: 85 : instruction = 101011100000000110
+inst_addr   85: 101011100000000110
+store4bit R2=1010101010101010 im=0000000110
+inst_addr   85: 101011100000000110
+write mem    6: 1010101010101010
+write mem    6: 1010101010101010
+inst_addr   85: 101011100000000110
+inst_addr   86: 101011000000000111
+write mem    6: 1010101010101010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   86: 101011000000000111
+PC: 86 : instruction = 101011000000000111
+inst_addr   86: 101011000000000111
+store4bit R0=1001100110011001 im=0000000111
+write mem    7: 1001100110011001
+inst_addr   86: 101011000000000111
+inst_addr   86: 101011000000000111
+write mem    7: 1001100110011001
+write mem    7: 1001100110011001
+inst_addr   87: 100100000000010000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   87: 100100000000010000
+PC: 87 : instruction = 100100000000010000
+inst_addr   87: 100100000000010000
+loopjump LC=   1 im=  16
+inst_addr   87: 100100000000010000
+inst_addr   87: 100100000000010000
+inst_addr   16: 000001000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   16: 000001000000000001
+PC: 16 : instruction = 000001000000000001
+inst_addr   16: 000001000000000001
+add8bit R0=0000111100001111 R1=0011010000110100
+inst_addr   16: 000001000000000001
+inst_addr   16: 000001000000000001
+inst_addr   17: 000001000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   17: 000001000000001000
+PC: 17 : instruction = 000001000000001000
+inst_addr   17: 000001000000001000
+add8bit R2=0000001000000010 R0=0100001101000011
+inst_addr   17: 000001000000001000
+inst_addr   17: 000001000000001000
+inst_addr   18: 000111000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0100010101000101
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   18: 000111000000001001
+PC: 18 : instruction = 000111000000001001
+inst_addr   18: 000111000000001001
+sub8bit R2=0100010101000101 R1=0011010000110100
+inst_addr   18: 000111000000001001
+inst_addr   18: 000111000000001001
+inst_addr   19: 001101000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0001000100010001
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   19: 001101000000001001
+PC: 19 : instruction = 001101000000001001
+inst_addr   19: 001101000000001001
+mul8bit R2=0001000100010001 R1=0011010000110100
+inst_addr   19: 001101000000001001
+inst_addr   19: 001101000000001001
+inst_addr   20: 101010010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   20: 101010010000000101
+PC: 20 : instruction = 101010010000000101
+inst_addr   20: 101010010000000101
+store8bit R1=0011010000110100 im=0000000101
+write mem    5: 0011010000110100
+inst_addr   20: 101010010000000101
+inst_addr   20: 101010010000000101
+write mem    5: 0011010000110100
+write mem    5: 0011010000110100
+inst_addr   21: 101010100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   21: 101010100000000110
+PC: 21 : instruction = 101010100000000110
+inst_addr   21: 101010100000000110
+store8bit R2=0111010001110100 im=0000000110
+inst_addr   21: 101010100000000110
+write mem    6: 0111010001110100
+write mem    6: 0111010001110100
+inst_addr   21: 101010100000000110
+inst_addr   22: 101010000000000111
+write mem    6: 0111010001110100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   22: 101010000000000111
+PC: 22 : instruction = 101010000000000111
+inst_addr   22: 101010000000000111
+store8bit R0=0100001101000011 im=0000000111
+write mem    7: 0100001101000011
+inst_addr   22: 101010000000000111
+inst_addr   22: 101010000000000111
+write mem    7: 0100001101000011
+write mem    7: 0100001101000011
+inst_addr   23: 100110010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   23: 100110010000000101
+PC: 23 : instruction = 100110010000000101
+inst_addr   23: 100110010000000101
+load16bit R1 im=0000000101
+inst_addr   23: 100110010000000101
+inst_addr   23: 100110010000000101
+inst_addr   24: 100110100000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   24: 100110100000000111
+PC: 24 : instruction = 100110100000000111
+inst_addr   24: 100110100000000111
+load16bit R2 im=0000000111
+inst_addr   24: 100110100000000111
+inst_addr   24: 100110100000000111
+inst_addr   25: 001100000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0100001101000011
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   25: 001100000000001001
+PC: 25 : instruction = 001100000000001001
+inst_addr   25: 001100000000001001
+mul16bit R2=0100001101000011 R1=0011010000110100
+inst_addr   25: 001100000000001001
+inst_addr   25: 001100000000001001
+inst_addr   26: 000110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0100010110011100
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   26: 000110000000001001
+PC: 26 : instruction = 000110000000001001
+inst_addr   26: 000110000000001001
+sub16bit R2=0100010110011100 R1=0011010000110100
+inst_addr   26: 000110000000001001
+inst_addr   26: 000110000000001001
+inst_addr   27: 011000000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0011010000110100
+H10: 0001000101101000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   27: 011000000000000001
+PC: 27 : instruction = 011000000000000001
+inst_addr   27: 011000000000000001
+Rshift16bit R1=0011010000110100
+inst_addr   27: 011000000000000001
+inst_addr   27: 011000000000000001
+inst_addr   28: 010101000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0001000101101000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   28: 010101000000000010
+PC: 28 : instruction = 010101000000000010
+inst_addr   28: 010101000000000010
+Lshift16bit R2=0001000101101000
+inst_addr   28: 010101000000000010
+inst_addr   28: 010101000000000010
+inst_addr   29: 000011100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011010000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   29: 000011100000001110
+PC: 29 : instruction = 000011100000001110
+inst_addr   29: 000011100000001110
+add16bit R2=0010001011010000 im=0000001110
+inst_addr   29: 000011100000001110
+inst_addr   29: 000011100000001110
+inst_addr   30: 001001100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011011110
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   30: 001001100000001110
+PC: 30 : instruction = 001001100000001110
+inst_addr   30: 001001100000001110
+sub16bit R2=0010001011011110 im=0000001110
+inst_addr   30: 001001100000001110
+inst_addr   30: 001001100000001110
+inst_addr   31: 100001000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 0010001011010000
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   31: 100001000000000010
+PC: 31 : instruction = 100001000000000010
+inst_addr   31: 100001000000000010
+not16bit R2=0010001011010000
+inst_addr   31: 100001000000000010
+inst_addr   31: 100001000000000010
+inst_addr   32: 011011000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0001101000011010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   32: 011011000000000100
+PC: 32 : instruction = 011011000000000100
+inst_addr   32: 011011000000000100
+and16bit R1=0001101000011010 R0=0000000000001111
+inst_addr   32: 011011000000000100
+inst_addr   32: 011011000000000100
+inst_addr   33: 011110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   33: 011110000000001001
+PC: 33 : instruction = 011110000000001001
+inst_addr   33: 011110000000001001
+or16bit R2=1101110100101111 R1=0000000000001010
+inst_addr   33: 011110000000001001
+inst_addr   33: 011110000000001001
+inst_addr   34: 101100000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   34: 101100000000001111
+PC: 34 : instruction = 101100000000001111
+inst_addr   34: 101100000000001111
+set16bit R0 im=0000001111
+inst_addr   34: 101100000000001111
+inst_addr   34: 101100000000001111
+inst_addr   35: 101100010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000001010
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   35: 101100010000000100
+PC: 35 : instruction = 101100010000000100
+inst_addr   35: 101100010000000100
+set16bit R1 im=0000000100
+inst_addr   35: 101100010000000100
+inst_addr   35: 101100010000000100
+inst_addr   36: 101100100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 1101110100101111
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   36: 101100100000000010
+PC: 36 : instruction = 101100100000000010
+inst_addr   36: 101100100000000010
+set16bit R2 im=0000000010
+inst_addr   36: 101100100000000010
+inst_addr   36: 101100100000000010
+inst_addr   37: 010010000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   37: 010010000000000110
+PC: 37 : instruction = 010010000000000110
+inst_addr   37: 010010000000000110
+MAC16bit R0=0000000000001111 R1=0000000000000100 R2=0000000000000010
+inst_addr   37: 010010000000000110
+inst_addr   37: 010010000000000110
+inst_addr   38: 001001000000001000
+======== another instruction ========
+H00: 0000000000010111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   38: 001001000000001000
+PC: 38 : instruction = 001001000000001000
+inst_addr   38: 001001000000001000
+sub16bit R0=0000000000010111 im=0000001000
+inst_addr   38: 001001000000001000
+inst_addr   38: 001001000000001000
+inst_addr   39: 001111010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000000100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   39: 001111010000001101
+PC: 39 : instruction = 001111010000001101
+inst_addr   39: 001111010000001101
+mul16bit R1=0000000000000100 im=0000001101
+inst_addr   39: 001111010000001101
+inst_addr   39: 001111010000001101
+inst_addr   40: 101001010000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   40: 101001010000000111
+PC: 40 : instruction = 101001010000000111
+inst_addr   40: 101001010000000111
+store16bit R1=0000000000110100 im=0000000111
+write mem    7: 0000000000110100
+inst_addr   40: 101001010000000111
+inst_addr   40: 101001010000000111
+write mem    7: 0000000000110100
+write mem    7: 0000000000110100
+inst_addr   41: 101001100000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   41: 101001100000000100
+PC: 41 : instruction = 101001100000000100
+inst_addr   41: 101001100000000100
+store16bit R2=0000000000000010 im=0000000100
+inst_addr   41: 101001100000000100
+write mem    4: 0000000000000010
+write mem    4: 0000000000000010
+inst_addr   41: 101001100000000100
+inst_addr   42: 101001000000001000
+write mem    4: 0000000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   42: 101001000000001000
+PC: 42 : instruction = 101001000000001000
+inst_addr   42: 101001000000001000
+store16bit R0=0000000000001111 im=0000001000
+write mem    8: 0000000000001111
+inst_addr   42: 101001000000001000
+inst_addr   42: 101001000000001000
+write mem    8: 0000000000001111
+write mem    8: 0000000000001111
+inst_addr   43: 100111010000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0011010000110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   43: 100111010000000110
+PC: 43 : instruction = 100111010000000110
+inst_addr   43: 100111010000000110
+load8bit R1 im=0000000110
+inst_addr   43: 100111010000000110
+inst_addr   43: 100111010000000110
+inst_addr   44: 100111100000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0111010001110100
+Oset10: 0111010001110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   44: 100111100000000111
+PC: 44 : instruction = 100111100000000111
+inst_addr   44: 100111100000000111
+load8bit R2 im=0000000111
+inst_addr   44: 100111100000000111
+inst_addr   44: 100111100000000111
+inst_addr   45: 100111000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0100001101000011
+Oset01: 0111010001110100
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   45: 100111000000001000
+PC: 45 : instruction = 100111000000001000
+inst_addr   45: 100111000000001000
+load8bit R0 im=0000001000
+inst_addr   45: 100111000000001000
+inst_addr   45: 100111000000001000
+inst_addr   46: 011001000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0111010001110100
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   46: 011001000000000001
+PC: 46 : instruction = 011001000000000001
+inst_addr   46: 011001000000000001
+Rshift8bit R1=0111010001110100
+inst_addr   46: 011001000000000001
+inst_addr   46: 011001000000000001
+inst_addr   47: 010110000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000000110100
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   47: 010110000000000010
+PC: 47 : instruction = 010110000000000010
+inst_addr   47: 010110000000000010
+Lshift8bit R2=0000000000110100
+inst_addr   47: 010110000000000010
+inst_addr   47: 010110000000000010
+inst_addr   48: 000100100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000001101000
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   48: 000100100000001110
+PC: 48 : instruction = 000100100000001110
+inst_addr   48: 000100100000001110
+add8bit R2=0000000001101000 im=0000001110
+inst_addr   48: 000100100000001110
+inst_addr   48: 000100100000001110
+inst_addr   49: 001010100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000111001110110
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   49: 001010100000001110
+PC: 49 : instruction = 001010100000001110
+inst_addr   49: 001010100000001110
+sub8bit R2=0000111001110110 im=0000001110
+inst_addr   49: 001010100000001110
+inst_addr   49: 001010100000001110
+inst_addr   50: 100010000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 0000000001101000
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   50: 100010000000000010
+PC: 50 : instruction = 100010000000000010
+inst_addr   50: 100010000000000010
+not8bit R2=0000000001101000
+inst_addr   50: 100010000000000010
+inst_addr   50: 100010000000000010
+inst_addr   51: 011100000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0011101000111010
+Oset10: 1111111110010111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   51: 011100000000000100
+PC: 51 : instruction = 011100000000000100
+inst_addr   51: 011100000000000100
+and8bit R1=0011101000111010 R0=0000000000001111
+inst_addr   51: 011100000000000100
+inst_addr   51: 011100000000000100
+inst_addr   52: 011111000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110010111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   52: 011111000000001001
+PC: 52 : instruction = 011111000000001001
+inst_addr   52: 011111000000001001
+or8bit R2=1111111110010111 R1=0000000000001010
+inst_addr   52: 011111000000001001
+inst_addr   52: 011111000000001001
+inst_addr   53: 101101000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000000000001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   53: 101101000000001111
+PC: 53 : instruction = 101101000000001111
+inst_addr   53: 101101000000001111
+set8bit R0 im=0000001111
+inst_addr   53: 101101000000001111
+inst_addr   53: 101101000000001111
+inst_addr   54: 101101010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000000000001010
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   54: 101101010000000100
+PC: 54 : instruction = 101101010000000100
+inst_addr   54: 101101010000000100
+set8bit R1 im=0000000100
+inst_addr   54: 101101010000000100
+inst_addr   54: 101101010000000100
+inst_addr   55: 101101100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 1111111110011111
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   55: 101101100000000010
+PC: 55 : instruction = 101101100000000010
+inst_addr   55: 101101100000000010
+set8bit R2 im=0000000010
+inst_addr   55: 101101100000000010
+inst_addr   55: 101101100000000010
+inst_addr   56: 010011000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   56: 010011000000000110
+PC: 56 : instruction = 010011000000000110
+inst_addr   56: 010011000000000110
+MAC8bit R0=0000111100001111 R1=0000010000000100 R2=0000001000000010
+inst_addr   56: 010011000000000110
+inst_addr   56: 010011000000000110
+inst_addr   57: 001010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0001011100010111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   57: 001010000000001000
+PC: 57 : instruction = 001010000000001000
+inst_addr   57: 001010000000001000
+sub8bit R0=0001011100010111 im=0000001000
+inst_addr   57: 001010000000001000
+inst_addr   57: 001010000000001000
+inst_addr   58: 010000010000001101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0000010000000100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   58: 010000010000001101
+PC: 58 : instruction = 010000010000001101
+inst_addr   58: 010000010000001101
+mul8bit R1=0000010000000100 im=0000001101
+inst_addr   58: 010000010000001101
+inst_addr   58: 010000010000001101
+inst_addr   59: 101010010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   59: 101010010000001001
+PC: 59 : instruction = 101010010000001001
+inst_addr   59: 101010010000001001
+store8bit R1=0011010000110100 im=0000001001
+inst_addr   59: 101010010000001001
+write mem    9: 0011010000110100
+write mem    9: 0011010000110100
+inst_addr   59: 101010010000001001
+inst_addr   60: 101010100000000110
+write mem    9: 0011010000110100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   60: 101010100000000110
+PC: 60 : instruction = 101010100000000110
+inst_addr   60: 101010100000000110
+store8bit R2=0000001000000010 im=0000000110
+write mem    6: 0000001000000010
+inst_addr   60: 101010100000000110
+inst_addr   60: 101010100000000110
+write mem    6: 0000001000000010
+write mem    6: 0000001000000010
+inst_addr   61: 101010000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   61: 101010000000000111
+PC: 61 : instruction = 101010000000000111
+inst_addr   61: 101010000000000111
+store8bit R0=0000111100001111 im=0000000111
+inst_addr   61: 101010000000000111
+write mem    7: 0000111100001111
+write mem    7: 0000111100001111
+inst_addr   61: 101010000000000111
+inst_addr   62: 101000010000001001
+write mem    7: 0000111100001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   62: 101000010000001001
+PC: 62 : instruction = 101000010000001001
+inst_addr   62: 101000010000001001
+load4bit R1 im=0000001001
+inst_addr   62: 101000010000001001
+inst_addr   62: 101000010000001001
+inst_addr   63: 101000100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 0011010000110100
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   63: 101000100000000110
+PC: 63 : instruction = 101000100000000110
+inst_addr   63: 101000100000000110
+load4bit R2 im=0000000110
+inst_addr   63: 101000100000000110
+inst_addr   63: 101000100000000110
+inst_addr   64: 101000000000000111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   64: 101000000000000111
+PC: 64 : instruction = 101000000000000111
+inst_addr   64: 101000000000000111
+load4bit R0 im=0000000111
+inst_addr   64: 101000000000000111
+inst_addr   64: 101000000000000111
+inst_addr   65: 101110100001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 0000001000000010
+           -- execute --             
+inst_addr   65: 101110100001011010
+PC: 65 : instruction = 101110100001011010
+inst_addr   65: 101110100001011010
+set4bit R2 im=0001011010
+inst_addr   65: 101110100001011010
+inst_addr   65: 101110100001011010
+inst_addr   66: 011010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0011010000110100
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   66: 011010000000000001
+PC: 66 : instruction = 011010000000000001
+inst_addr   66: 011010000000000001
+Rshift4bit R1=0011010000110100
+inst_addr   66: 011010000000000001
+inst_addr   66: 011010000000000001
+inst_addr   67: 010111000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   67: 010111000000000010
+PC: 67 : instruction = 010111000000000010
+inst_addr   67: 010111000000000010
+Lshift4bit R2=1010101010101010
+inst_addr   67: 010111000000000010
+inst_addr   67: 010111000000000010
+inst_addr   68: 000101100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   68: 000101100000001110
+PC: 68 : instruction = 000101100000001110
+inst_addr   68: 000101100000001110
+add4bit R2=0100010001000100 im=0000001110
+inst_addr   68: 000101100000001110
+inst_addr   68: 000101100000001110
+inst_addr   69: 001011100000001110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   69: 001011100000001110
+PC: 69 : instruction = 001011100000001110
+inst_addr   69: 001011100000001110
+sub4bit R2=0010001000100010 im=0000001110
+inst_addr   69: 001011100000001110
+inst_addr   69: 001011100000001110
+inst_addr   70: 100011000000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 0100010001000100
+           -- execute --             
+inst_addr   70: 100011000000000010
+PC: 70 : instruction = 100011000000000010
+inst_addr   70: 100011000000000010
+not4bit R2=0100010001000100
+inst_addr   70: 100011000000000010
+inst_addr   70: 100011000000000010
+inst_addr   71: 011101000000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0001001000010010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   71: 011101000000000100
+PC: 71 : instruction = 011101000000000100
+inst_addr   71: 011101000000000100
+and4bit R1=0001001000010010 R0=0000111100001111
+inst_addr   71: 011101000000000100
+inst_addr   71: 011101000000000100
+inst_addr   72: 100000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   72: 100000000000001001
+PC: 72 : instruction = 100000000000001001
+inst_addr   72: 100000000000001001
+or4bit R2=1011101110111011 R1=0000001000000010
+inst_addr   72: 100000000000001001
+inst_addr   72: 100000000000001001
+inst_addr   73: 101110000000001111
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0000111100001111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   73: 101110000000001111
+PC: 73 : instruction = 101110000000001111
+inst_addr   73: 101110000000001111
+set4bit R0 im=0000001111
+inst_addr   73: 101110000000001111
+inst_addr   73: 101110000000001111
+inst_addr   74: 101110010000000100
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0000001000000010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   74: 101110010000000100
+PC: 74 : instruction = 101110010000000100
+inst_addr   74: 101110010000000100
+set4bit R1 im=0000000100
+inst_addr   74: 101110010000000100
+inst_addr   74: 101110010000000100
+inst_addr   75: 101110100000000010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   75: 101110100000000010
+PC: 75 : instruction = 101110100000000010
+inst_addr   75: 101110100000000010
+set4bit R2 im=0000000010
+inst_addr   75: 101110100000000010
+inst_addr   75: 101110100000000010
+inst_addr   76: 010100000000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   76: 010100000000000110
+PC: 76 : instruction = 010100000000000110
+inst_addr   76: 010100000000000110
+MAC4bit R0=1111111111111111 R1=0100010001000100 R2=0010001000100010
+inst_addr   76: 010100000000000110
+inst_addr   76: 010100000000000110
+inst_addr   77: 001011000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 0111011101110111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   77: 001011000000001000
+PC: 77 : instruction = 001011000000001000
+inst_addr   77: 001011000000001000
+sub4bit R0=0111011101110111 im=0000001000
+inst_addr   77: 001011000000001000
+inst_addr   77: 001011000000001000
+inst_addr   78: 010001010000000101
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   78: 010001010000000101
+PC: 78 : instruction = 010001010000000101
+inst_addr   78: 010001010000000101
+mul4bit R1=0100010001000100 im=0000000101
+inst_addr   78: 010001010000000101
+inst_addr   78: 010001010000000101
+inst_addr   79: 101110010001011010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 0100010001000100
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   79: 101110010001011010
+PC: 79 : instruction = 101110010001011010
+inst_addr   79: 101110010001011010
+set4bit R1 im=0001011010
+inst_addr   79: 101110010001011010
+inst_addr   79: 101110010001011010
+inst_addr   80: 000010000000000001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1111111111111111
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   80: 000010000000000001
+PC: 80 : instruction = 000010000000000001
+inst_addr   80: 000010000000000001
+add4bit R0=1111111111111111 R1=1010101010101010
+inst_addr   80: 000010000000000001
+inst_addr   80: 000010000000000001
+inst_addr   81: 000010000000001000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0010001000100010
+           -- execute --             
+inst_addr   81: 000010000000001000
+PC: 81 : instruction = 000010000000001000
+inst_addr   81: 000010000000001000
+add4bit R2=0010001000100010 R0=1001100110011001
+inst_addr   81: 000010000000001000
+inst_addr   81: 000010000000001000
+inst_addr   82: 001000000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1011101110111011
+           -- execute --             
+inst_addr   82: 001000000000001001
+PC: 82 : instruction = 001000000000001001
+inst_addr   82: 001000000000001001
+sub4bit R2=1011101110111011 R1=1010101010101010
+inst_addr   82: 001000000000001001
+inst_addr   82: 001000000000001001
+inst_addr   83: 001110000000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 0001000100010001
+           -- execute --             
+inst_addr   83: 001110000000001001
+PC: 83 : instruction = 001110000000001001
+inst_addr   83: 001110000000001001
+mul4bit R2=0001000100010001 R1=1010101010101010
+inst_addr   83: 001110000000001001
+inst_addr   83: 001110000000001001
+inst_addr   84: 101011010000001001
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   84: 101011010000001001
+PC: 84 : instruction = 101011010000001001
+inst_addr   84: 101011010000001001
+store4bit R1=1010101010101010 im=0000001001
+write mem    9: 1010101010101010
+inst_addr   84: 101011010000001001
+inst_addr   84: 101011010000001001
+write mem    9: 1010101010101010
+write mem    9: 1010101010101010
+inst_addr   85: 101011100000000110
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   85: 101011100000000110
+PC: 85 : instruction = 101011100000000110
+inst_addr   85: 101011100000000110
+store4bit R2=1010101010101010 im=0000000110
+inst_addr   85: 101011100000000110
+write mem    6: 1010101010101010
+write mem    6: 1010101010101010
+inst_addr   85: 101011100000000110
+inst_addr   86: 101011000000000111
+write mem    6: 1010101010101010
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   86: 101011000000000111
+PC: 86 : instruction = 101011000000000111
+inst_addr   86: 101011000000000111
+store4bit R0=1001100110011001 im=0000000111
+write mem    7: 1001100110011001
+inst_addr   86: 101011000000000111
+inst_addr   86: 101011000000000111
+write mem    7: 1001100110011001
+write mem    7: 1001100110011001
+inst_addr   87: 100100000000010000
+======== another instruction ========
+H00: 0000000000001111
+H01: 0000000000110100
+H10: 0000000000000010
+H11: xxxxxxxxxxxxxxxx
+Oset00: 0000111100001111
+Oset01: 0011010000110100
+Oset10: 0000001000000010
+Qset00: 1001100110011001
+Qset01: 1010101010101010
+Qset10: 1010101010101010
+           -- execute --             
+inst_addr   87: 100100000000010000
+PC: 87 : instruction = 100100000000010000
+inst_addr   87: 100100000000010000
+loopjump LC=   0 im=  16
+inst_addr   87: 100100000000010000
+inst_addr   87: 100100000000010000
+inst_addr   88: 111111000000000000
+inst_addr   88: 111111000000000000
