@@ -9,16 +9,17 @@ import numpy as np
 
 class delayInputs(MutationOperator):
 
-    def __init__(self, TB, files):
+    def __init__(self, TB, files, dont_touch):
         #print(files)
-        super().__init__('feedback for delayInputs', 'delayInputs',TB, files)
+        super().__init__('feedback for delayInputs', 'delayInputs',TB, files, dont_touch)
+        self.default_true_sim = False
         self.numOfMutationsThatCanBeApplied = 0
         self.inputDict = {fileName: None for fileName in self.files}
         for fileName in self.files:
             text = open('TestingCode/'+fileName).readlines()
             inputList = []
             for line in text: ## Go in the text line by line.
-                if(('input' in line)):
+                if(('input' in line and 'clk' not in line)):
                     rearrangedLine = line.replace('input', '') ## drop input statement
                     # drop the bit declaraitons
                     if("[" in line ) & ("]" in line):
@@ -41,7 +42,6 @@ class delayInputs(MutationOperator):
         for fileName in self.files: ## iterate over files
             text = open('TestingCode/'+fileName).readlines()
             for lineIndex, line in enumerate(text): ## get the lineIndex for later use
-
                 ## delay wire is written directly after the declaration of input to do not create syntax error.
                 if((self.inputDict[fileName][x]["name"] in line) & ("input" in line)):
                     #print("Delayed Input (by #2): ", self.inputDict[fileName][x]["name"])

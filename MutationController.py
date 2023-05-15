@@ -6,6 +6,7 @@ from forceConst import forceConst
 from delayInputs import delayInputs
 from delayOutputs import delayOutputs
 from replaceOperator import replaceOperator
+from statementDeletion import statementDeletion
 
 # from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 
@@ -14,18 +15,25 @@ class MutationController:
     def __init__(self, TB):
         self.TB = TB
         all_files = os.listdir('TestingCode/')
+        self.dont_touch = []
         self.files = []
         for i in all_files:
-            if ('.v' in i) and ('.vcd' not in i) and (i != TB):
+            if ('.v' in i) and ('.vcd' not in i) and (i != TB) and ('DW02' not in i) and ('flop' not in i):
                 self.files.append(i)
                 # add all verilog files except tb
+            elif (('.v' in i) and ('.vcd' not in i) and (i != TB) ):
+                self.dont_touch.append(i)
 
         if self.files == '':
             print('No verilog files detected, make sure they are in the same folder')
         self.mutationTypes = [
-            changeBitWidth(self.TB, self.files),
-            delayInputs(self.TB, self.files),
-            delayOutputs(self.TB, self.files), replaceOperator(self.TB, self.files), forceConst(self.TB, self.files)]#[changeBitWidth, forceConstant, unstableOutput, raceCondition, delayOut, operatorChange, randomFlips]
+            changeBitWidth(self.TB, self.files, self.dont_touch),
+            delayInputs(self.TB, self.files, self.dont_touch),
+            delayOutputs(self.TB, self.files, self.dont_touch), 
+            replaceOperator(self.TB, self.files, self.dont_touch), 
+            forceConst(self.TB, self.files, self.dont_touch),
+            statementDeletion(self.TB, self.files, self.dont_touch)]
+        #[unstableOutput, randomFlips]
         
         self.cols1 = ['Mutation','iteration','resultType']
         self.complete_df = pd.DataFrame(columns=self.cols1)
@@ -39,6 +47,8 @@ class MutationController:
             for j in list:
                 # self.complete_df = self.complete_df.concat(pd.DataFrame([['changeBitWidth',j[0], j[1]]], columns=self.cols1), ignore_index=True)
                 self.complete_df.loc[len(self.complete_df)] = [j[0], j[1], j[2]]
+                
+        #self.complete_df = self.complete_df.dropna()
         #for i in self.mutationTypes:
             
 #    def printSummarizedTable(self):
@@ -53,7 +63,7 @@ class MutationController:
             
         return self.summarized_df
     def getPlots(self):
-        return self.summarized_df.plot(x="Mutation",y='iterations', kind="bar", rot=5, fontsize=8), self.summarized_df.plot(x="Mutation",y='iterations', kind="bar", rot=5, fontsize=8)
+        return self.summarized_df.plot(x="Mutation",y='percentage_passed', kind="bar", rot=5, fontsize=8), self.summarized_df.plot(x="Mutation",y='iterations', kind="bar", rot=5, fontsize=8)
 
 
 class main:

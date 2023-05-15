@@ -6,9 +6,9 @@ from GlobalVars import globalIterations, IverilogFilePath, vvpPath
 
 class replaceOperator(MutationOperator):
     
-    def __init__(self, TB, files):
+    def __init__(self, TB, files, dont_touch):
         #print(files)
-        super().__init__('feedback for replaceOperator', 'replaceOperator',TB, files)
+        super().__init__('feedback for replaceOperator', 'replaceOperator',TB, files, dont_touch)
         self.numOfMutationsThatCanBeApplied = 0
         for i in self.files:
             text = open('TestingCode/'+i).readlines()
@@ -74,12 +74,13 @@ class replaceOperator(MutationOperator):
                                 search_text = "=="
                                 replace_text = "!="
                                 
-                            #print(text[j] + '-> ' )
+                            print(text[j] + '-> ' )
                             text[j] = text[j].replace(search_text, replace_text)
-                            #print(text[j])
+                            print(text[j])
+                            text.insert(j-1, ' //error insterted here')
+                            
                     cnt+=1
-                    
-            #There is a bug here!!!!
+
             MutatedFileNames = list(map(lambda x: x.replace(i, i[:-2]+'_mutation_'+self.getMutationType()+str(globalIterations)+'.v'), self.files))
 
             #MutatedFileNames.replace(i,i[:-2]+'_mutation_'+str(self.iterations)+'.v')                         

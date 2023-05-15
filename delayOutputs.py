@@ -16,9 +16,10 @@ class delayOutputs(MutationOperator):
     #   ]
     # }
     
-    def __init__(self, TB, files):
+    def __init__(self, TB, files, dont_touch):
         #print(files)
-        super().__init__('feedback for delayOutputs', 'delayOutputs',TB, files)
+        super().__init__('feedback for delayOutputs', 'delayOutputs',TB, files, dont_touch)
+        self.default_true_sim = False
         self.numOfMutationsThatCanBeApplied = 0
         self.outputDict = {fileName: None for fileName in self.files}
         for fileName in self.files:
